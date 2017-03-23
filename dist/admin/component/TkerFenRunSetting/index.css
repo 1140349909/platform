@@ -1,0 +1,70 @@
+.tker-fenrun-setting-box:before, .tker-fenrun-setting-box:after {
+  content: " ";
+  display: table;
+}
+
+.tker-fenrun-setting-box:after {
+  clear: both;
+}
+
+.tker-fenrun-setting-imgs img {
+  display: inline-block;
+  width: 100%;
+}
+
+.tker-fenrun-setting-imgs {
+  text-align: right;
+  float: right;
+  width: 48%;
+}
+
+.tker-fenrun-setting-form.tker-fenrun-setting-formmax {
+  width: 100%;
+  height: auto;
+  border-right: none;
+}
+
+.tker-fenrun-setting-form.tker-fenrun-setting-formmax .tker-fenrun-setting-box {
+  height: auto;
+}
+
+.tker-fenrun-setting-form {
+  float: left;
+  width: 50%;
+  height: 500px;
+  border-right: 1px dashed #d9d9d9;
+}
+
+.tker-fenrun-setting-form .ant-input-number-input {
+  margin-right: 0;
+}
+
+.tker-fenrun-setting-form .ant-input-number {
+  margin-right: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.tker-fenrun-setting-form .ant-input-group-addon {
+  display: inline-block;
+  height: 32px;
+  position: relative;
+  margin-top: -1px;
+  width: 25px;
+  line-height: 22px;
+  border-left: none !important;
+  border-top-right-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+}
+
+.tker-fenrun-setting-form .tker-fenrun-setting-profit {
+  border-radius: 6px !important;
+  color: #f50;
+  padding-left: 5px;
+}
+
+.tker-fenrun-setting-tip {
+  color: #f50;
+  float: left;
+  line-height: 30px;
+}

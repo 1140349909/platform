@@ -1,0 +1,37 @@
+@import "../../../common/asset/variable";
+
+.tag-list {
+    padding: 6px 0;
+    background: #fff;
+    font-size: 12px;
+    color: #8492a6;
+    line-height: 2em;
+    border-top: 1px solid #dbe1e7;
+    .clearfix();
+}
+
+.tag-list-title {
+    float: left;
+    width: 60px;
+    padding-left: 16px;
+    margin-left: -100%;
+}
+
+.tag-list-content {
+    float: left;
+    width: 100%;
+    > ul {
+        padding-left: 60px;
+    }
+}
+
+.tag-list-item {
+    display: inline-block;
+    width: 42px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tag-list-item-active {
+    color: @primary-color;
+}

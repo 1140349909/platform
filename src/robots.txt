@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:/src
+Disallow: /bs.sit.vveshow.com/
+Disallow: /dev.vveshow.com/
+Disallow:/
+
+

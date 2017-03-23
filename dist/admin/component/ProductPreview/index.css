@@ -1,0 +1,78 @@
+.product-previewbox {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.product-previewbox:before, .product-previewbox:after {
+  content: " ";
+  display: table;
+}
+
+.product-previewbox:after {
+  clear: both;
+}
+
+.product-preview {
+  position: relative;
+  height: 730px;
+  top: 50px;
+}
+
+.product-preview-l {
+  float: left;
+}
+
+.product-preview-r {
+  float: right;
+}
+
+.product-preview-phone {
+  position: relative;
+  height: 713px;
+  width: 363.5px;
+  background: url(/admin/component/ProductPreview/img/preview-phone.png) no-repeat;
+  background-size: 100%;
+}
+
+.product-preview-phone-iframebox {
+  top: 140px;
+  left: 22px;
+  position: absolute;
+  width: 318px;
+  height: 492px;
+  overflow: hidden;
+}
+
+.product-preview-phone-iframe {
+  width: 330px;
+  height: 492px;
+  border: none;
+}
+
+.product-preview-qrcode {
+  position: absolute;
+  top: 50%;
+  margin-top: -130px;
+  right: -10px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.product-preview-qrcode img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.product-preview-qrcode .anticon-eye {
+  color: #2db7f5;
+  font-size: 18px;
+}
+
+.product-preview-qrcode p {
+  font-size: 16px;
+}

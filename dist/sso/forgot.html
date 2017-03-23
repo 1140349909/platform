@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <title>艾乐卡营销管家 - 找回密码</title>
+    <link rel="stylesheet" href="/sso/asset/base.css" />
+    <link rel="stylesheet" href="/sso/asset/sso.css" />
+</head>
+<body class="page-forgot">
+<div id="welcome" class="welcome">
+    <div id="welcomeAnimate"></div>
+</div>
+<div id="sso" class="sso-passport sso-forgot">
+    <div class="sso-passport-header">
+        <h1>艾乐卡营销管家</h1>
+    </div>
+    <div class="sso-passport-content">
+        <div class="sso-forgot-content sso-forgot-retrieve">
+            <div class="sso-form">
+                <h3 class="sso-form-header">找回密码</h3>
+                <div class="sso-form-tips sso-form-tips-retrieve"></div>
+                <div class="sso-form-item">
+                    <div class="sso-form-label">
+                        <label for="user">已注册账号</label>
+                    </div>
+                    <div class="sso-form-control">
+                        <span class="sso-form-input-wrap">
+                            <input id="user" name="user" type="text" placeholder="输入注册邮箱/手机号码" class="sso-form-input"
+                                   value="">
+                        </span>
+                    </div>
+                </div>
+                <div class="sso-form-item">
+                    <div class="sso-form-label">
+                        <label for="captcha">验证码</label>
+                    </div>
+                    <div class="sso-form-control">
+                        <span class="sso-form-input-wrap-l">
+                            <input id="captcha" name="captcha" type="text" placeholder="证明你不是机器人"
+                                   class="sso-form-input sso-form-input-captcha"
+                                   value="">
+                        </span>
+                        <span class="sso-form-input-wrap-r">
+                            <div class="sso-form-captcha">
+                                <img id="captchaImg" class="sso-form-captcha-img"/>
+                                <div id="captchaSwitch" class="soo-form-captcha-switch"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="sso-form-item sso-form-smscodebox hidden">
+                    <div class="sso-form-label">
+                        <label for="smsCode">短信验证码</label>
+                    </div>
+                    <div class="sso-form-control">
+                        <span class="sso-form-input-wrap-l">
+                            <input id="smsCode" name="smsCode" type="text" placeholder="输入短信验证码"
+                                   class="sso-form-input sso-form-input-smscode"
+                                   value="">
+                        </span>
+                        <span class="sso-form-input-wrap-r">
+                            <button id="btnsmsCode" class="sso-form-smscode-btn sso-form-button">获取验证码</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="sso-form-action-retrieve">
+                    <button id="btnRetrieve" type='submit' class="sso-form-button">找回密码</button>
+                    <a class="sso-form-link" href="index.html">返回登录页</a>
+                </div>
+            </div>
+        </div>
+        <div class="sso-forgot-content sso-forgot-rest">
+            <div class="sso-form">
+                <h3 class="sso-form-header">重置密码</h3>
+                <div class="sso-form-tips sso-form-tips-retrieve"></div>
+                <div class="sso-form-item">
+                    <div class="sso-form-label">
+                        <label for="password">设定密码</label>
+                    </div>
+                    <div class="sso-form-control">
+                        <span class="sso-form-input-wrap">
+                            <input id="password" name="password" type="password" placeholder="设定6-16位数字+字母密码"
+                                   class="sso-form-input"
+                                   value="">
+                        </span>
+                    </div>
+                </div>
+                <div class="sso-form-item">
+                    <div class="sso-form-label">
+                        <label for="password2">确认密码</label>
+                    </div>
+                    <div class="sso-form-control">
+                        <span class="sso-form-input-wrap">
+                            <input id="password2" name="password2" type="password" placeholder="再次输入确认密码"
+                                   class="sso-form-input"
+                                   value="">
+                        </span>
+                    </div>
+                </div>
+                <div class="sso-form-action-retrieve">
+                    <button id="btnReste" class="sso-form-button">确认</button>
+                </div>
+            </div>
+        </div>
+        <div class="sso-forgot-content sso-forgot-success">
+            <div class="sso-form">
+                <h3 class="sso-form-header">重置密码</h3>
+                <div class="soo-form-info">
+                    <img class="soo-form-info-icon" src="/sso/asset/img/pass.png">
+                    <p class="soo-form-info-p">密码重置成功</p>
+                </div>
+                <div class="sso-form-action-retrieve">
+                    <a class="sso-form-button" href="index.html">立即登录</a>
+                </div>
+            </div>
+        </div>
+        <div class="sso-forgot-content sso-forgot-emailinfo-success">
+            <div class="sso-form">
+                <h3 class="sso-form-header">找回密码</h3>
+                <div class="soo-form-info">
+                    <p class="soo-form-info-p">密码找回链接已发至注册邮箱</p>
+                    <p class="soo-form-info-p">请点击链接激活重置密码</p>
+                </div>
+                <div class="sso-form-action-retrieve">
+                    <a class="sso-form-button" href="index.html">返回登录页</a>
+                </div>
+            </div>
+        </div>
+        <div class="sso-forgot-content sso-forgot-emailinfo-err">
+            <div class="sso-form">
+                <h3 class="sso-form-header">找回密码</h3>
+                <div class="soo-form-info">
+                    <p class="soo-form-info-p">链接失效</p>
+                    <p class="soo-form-info-p">请重新获取激活链接</p>
+                </div>
+                <div class="sso-form-action-retrieve">
+                    <button id="btnReLink" class="sso-form-button">重新获取链接</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sso-passport-footer"></div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/three.js/r68/three.min.js"></script>
+<script src="/sso/asset/base.js"></script>
+<script src="/sso/asset/wave.js"></script>
+<script src="/sso/asset/config.js"></script>
+<script src="/sso/asset/common.js"></script>
+<script src="/sso/asset/forget.js"></script>
+<script>
+    LK.forget.init();
+</script>
+</body>
+</html>

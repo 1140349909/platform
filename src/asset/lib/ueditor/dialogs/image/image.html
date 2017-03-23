@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ueditor图片对话框</title>
+    <script type="text/javascript" src="../internal.js"></script>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="../../third-party/jquery-1.10.2.min.js"></script>
+
+    <!--gif图片生成-->
+    <script src="../../third-party/gifshot/gifshot.min.js"></script>
+
+    <!-- webuploader -->
+    <script src="../../third-party/webuploader/webuploader.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../third-party/webuploader/webuploader.css">
+
+    <!-- image dialog -->
+    <link rel="stylesheet" href="image.css" type="text/css"/>
+</head>
+<body>
+
+<div class="wrapper">
+    <div id="tabhead" class="tabhead">
+        <!--<span class="tab" data-content-id="remote"><var id="lang_tab_remote"></var></span>-->
+        <span class="tab focus" data-content-id="upload"><var id="lang_tab_upload"></var></span>
+    </div>
+    <div class="alignBar">
+        <label class="algnLabel"><var id="lang_input_align"></var></label>
+                    <span id="alignIcon">
+                        <span id="noneAlign" class="none-align focus" data-align="none"></span>
+                        <span id="leftAlign" class="left-align" data-align="left"></span>
+                        <span id="rightAlign" class="right-align" data-align="right"></span>
+                        <span id="centerAlign" class="center-align" data-align="center"></span>
+                    </span>
+        <input id="align" name="align" type="hidden" value="none"/>
+    </div>
+    <div id="tabbody" class="tabbody">
+
+        <!-- 远程图片 -->
+        <div id="remote" class="panel">
+            <div class="top">
+                <div class="row">
+                    <label for="url"><var id="lang_input_url"></var></label>
+                    <span><input class="text" id="url" type="text"/></span>
+                </div>
+            </div>
+            <div class="left">
+                <div class="row">
+                    <label><var id="lang_input_size"></var></label>
+                    <span><var id="lang_input_width">&nbsp;&nbsp;</var><input class="text" type="text"
+                                                                              id="width"/>px </span>
+                    <span><var id="lang_input_height">&nbsp;&nbsp;</var><input class="text" type="text" id="height"/>px </span>
+                    <span style="display: none;"><input id="lock" type="checkbox" disabled="disabled"><span id="lockicon"></span></span>
+                </div>
+                <div class="row">
+                    <label><var id="lang_input_border"></var></label>
+                    <span><input class="text" type="text" id="border"/>px </span>
+                </div>
+                <div class="row" style="display: none;">
+                    <label><var id="lang_input_vhspace"></var></label>
+                    <span><input class="text" type="text" id="vhSpace"/>px </span>
+                </div>
+                <div class="row" style="display: none;">
+                    <label><var id="lang_input_title"></var></label>
+                    <span><input class="text" type="text" id="title"/></span>
+                </div>
+            </div>
+            <div class="right">
+                <div id="preview"></div>
+            </div>
+        </div>
+
+        <!-- 上传图片 -->
+        <div id="upload" class="panel focus">
+            <div id="queueList" class="queueList">
+                <div class="statusBar element-invisible">
+                    <div class="progress">
+                        <span class="text">0%</span>
+                        <span class="percentage"></span>
+                    </div>
+                    <div class="info"></div>
+                    <div class="btns">
+                        <span style="display: none;">
+                        <div id="filePickerBtn"></div>
+                        <div class="uploadBtn"><var id="lang_start_upload"></var></div>
+                            </span>
+                        <div id="buildGIf">GIF生成</div>
+                    </div>
+                </div>
+                <div id="dndArea" class="placeholder">
+                    <div class="filePickerContainer">
+                        <div id="filePickerReady"></div>
+                    </div>
+                </div>
+                <ul class="filelist element-invisible">
+                    <li id="filePickerBlock" class="filePickerBlock"></li>
+                </ul>
+                <div class="GIFCongif">
+                        <h3>友情提示：上传的图片大小保持一致</h3>
+                        <div class="row">
+                            <label>GIF图片宽度设置:</label>
+                            <span><var>&nbsp;&nbsp;</var><input class="text" type="text" id="GIFWidth" value="200"/>&nbsp;PX </span>
+                            <b class="error"></b>
+                        </div>
+                        <div class="row">
+                            <label>GIF图片高度设置:</label>
+                            <span><var>&nbsp;&nbsp;</var><input class="text" type="text" id="GIFHeight"  value="200"/>&nbsp;PX </span>
+                        </div>
+                    <div class="row">
+                        <label>GIF延迟时间设置:</label>
+                        <span><var>&nbsp;&nbsp;</var><input class="text" type="text" id="GIFTime"  value="0.8"/>&nbsp;秒 </span>
+                    </div>
+                        <div class="GIFbtn">
+                            <input id="makeGIF" type="button" value="生成GIF">
+                            <input id="goBack" type="button" value="返回上一步">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="image.js"></script>
+
+</body>
+</html>

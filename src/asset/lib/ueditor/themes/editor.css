@@ -1,0 +1,165 @@
+.lk-content {
+    font: 14px/1.8em -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    overflow: hidden;
+
+    font-family: helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei",simsun;
+    -webkit-touch-callout: none;
+    /*margin: 0;*/
+    font-size: 16px;
+    line-height: 1.5;
+    color: #5D5D5D;
+    word-wrap: break-word;
+
+}
+
+.lk-content * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    word-wrap: break-word !important;
+}
+
+/*头条预览标准样式*/
+
+/*.article-detail .article-content>div>p,
+.article-detail .article-content>p,
+.article-detail .article-content>div ul,
+.article-detail .article-content ul,
+.article-detail .article-content>div ol,
+.article-detail .article-content ol,
+.article-detail .article-content>div blockquote,
+.article-detail .article-content blockquote,
+.article-detail .article-content>div h2,
+.article-detail .article-content h2,
+.article-detail .article-content>div h3,
+.article-detail .article-content h3,
+.article-detail .article-content>div h4,
+.article-detail .article-content h4,
+.article-detail .article-content>div h5,
+.article-detail .article-content h5,
+.article-detail .article-content>div h6,
+.article-detail .article-content h6*/
+
+.lk-content div>p,
+.lk-content p,
+.lk-content div ul,
+.lk-content ul,
+.lk-content div ol,
+.lk-content ol,
+.lk-content div blockquote,
+.lk-content blockquote,
+.lk-content div h1,
+.lk-content h1,
+.lk-content div h2,
+.lk-content h2,
+.lk-content div h3,
+.lk-content h3,
+.lk-content div h4,
+.lk-content h4,
+.lk-content div h5,
+.lk-content h5,
+.lk-content div h6,
+.lk-content h6{
+    margin-top:1em;
+}
+
+/*拷贝今日头条的div样式*/
+
+.lk-content p {
+    /*font-size: 16px;
+    line-height: 32px;
+    color: #222;
+    word-wrap: break-word;*/
+}
+
+.lk-content ul {
+    /*list-style-position: outside;
+    list-style-type: circle;
+    list-style-image: none;
+    margin-left: 40px;*/
+}
+
+.lk-content ol {
+    /*list-style-position: outside;
+    list-style-type: circle;
+    list-style-image: none;
+    margin-left: 40px;*/
+}
+
+/*拷贝今日头条的div样式*/
+.lk-content section {
+    margin: 5px auto;
+    /*list-style-position: outside;
+    list-style-type: circle;
+    list-style-image: none;
+    margin-left: 40px;*/
+}
+
+/*拷贝今日头条的h1样式*/
+.lk-content section>h1,
+.lk-content h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+}
+
+.lk-content em {
+    font-style: italic;
+}
+
+.lk-content strong {
+    font-weight: bold;
+}
+
+/*拷贝今日头条的img样式*/
+.lk-content img {
+    /*width: 100%;*/
+    max-width: 640px !important;
+    display: block;
+    margin: 10px auto;
+    border: 0;
+}
+
+.lk-content blockquote {
+    display: block;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 3px solid #dbdbdb;
+}
+
+.lk-content fieldset {
+    min-width: 0;
+}
+
+/* linkto样式 */
+.lk-content .lk-product,
+.lk-content .lk-linkto {
+    display: inline-block;
+}
+
+.lk-content a.lk-product,
+.lk-content a.lk-linkto {
+    cursor: pointer;
+    color: #009dfc;
+}
+
+/* 版式默认样式 重置版式默认样式 */
+/*
+<section class="ILokaEditor">
+1、只允许使用section,span,p,img标签,使用section控制布局，内容的样式可使用span和p来控制，禁止使用em,strong,blockquote,hr,ol,ul,li等标签。
+2、版式的布局需要自适应
+3、内容控制请用行内样式控制,保证内容增加时候不变形,
+4、font的设置会随着全局的风格变化,默认为font: 14px/1.8em -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+自定义版式中需要固定,请设置独立设置font-size、line-height、font-family; 如果需要随着风格变化，则不需要设置
+</section>
+*/
+.ILokaEditor p,
+.ILokaEditor section {
+    /* 影响样式的部分在此次增加 */
+    margin: 0;
+    padding: 0;
+}

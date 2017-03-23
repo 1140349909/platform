@@ -1,0 +1,155 @@
+@import "../../../../../common/asset/variable";
+.h5-sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 486px;
+    .ant-menu-root {
+        width: 160px;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        user-select: none;
+        background: #2e3640;
+    }
+
+    > .ant-menu {
+        margin-bottom: 20px;
+    }
+
+    .h5-sidebar-menu-text {
+        display: inline-block;
+        min-width: 36px;
+    }
+    .ant-menu-submenu > .ant-menu-submenu-title {
+        font-size: 14px;
+        .iconfont {
+            margin-right: 8px;
+        }
+    }
+
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+        background: #272e36;
+    }
+    .ant-menu-dark.ant-menu-inline .ant-menu-item-selected {
+        background: #009dfc;
+    }
+}
+
+.h5-sidebar-false{
+    left:-486px;
+}
+
+.h5-sidebar-menu {
+    .ant-menu-item {
+        padding-left: 50px !important;
+        .icon-tianjia, .icon-tianjiachenggong, .ant-switch {
+            margin-left: 15px;
+        }
+    }
+}
+
+.h5-sidebar-panel {
+    position: absolute;
+    left: 160px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #e5e9f2;
+}
+
+.h5-sidebar-panel-box{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+}
+
+.h5-sidebar-panel-content{
+    flex: 1;
+    z-index:1;
+}
+
+.h5-sidebar-panel-header {
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    font-size: 14px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    z-index:2;
+}
+
+.h5-sidebar-panel-header-action {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    .iconfont {
+        color: #39404a;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .icon-undoIcon {
+        font-size: 14px;
+        margin-right: 8px;
+    }
+}
+
+.h5-sidebar-panel-list{
+    margin-top:10px;
+    width:326px;
+    padding-left:12px;
+    padding-right:12px;
+    .clearfix();
+}
+
+// 标题
+.h5-sidebar-title {
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #39404a;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// tab
+.h5-sidebar-tabs {
+    padding-top:11px;
+    padding-bottom: 11px;
+    text-align: center;
+}
+
+// .h5-sidebar-panel{
+//     .toolsused-bdlist, 
+//     .toolsused-xzlist,
+//     .toolsused-imglist,
+//     .toolsused-medialist,
+//     .toolsused-wzlist{
+//         margin-top:60px;
+//     }
+// }
+
+// .h5-sidebar-panel .h5-sidebar-all{
+//     .toolsused-medialist,
+//     .tooltpl-listformat{
+//         margin-top:120px;
+//     }
+// }
+
+.h5-sidebar-plus-item{
+    i{
+        float: right;
+        margin-right:10px;
+    }
+}
+
+.h5-sidebar-arrow{
+    position: absolute;
+    z-index: 100;
+    right: -14px;
+    top:50%;
+    margin-top:-26px;
+}

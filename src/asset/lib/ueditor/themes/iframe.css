@@ -1,0 +1,88 @@
+/*可以在这里添加你自己的css*/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body.view {
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 80px;
+    height: 150px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+    background: #666
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #666
+}
+
+::-webkit-scrollbar-button {
+    background-color: #666;
+    display: none;
+}
+
+/* 版式选中样式 */
+.ILokaEditorActive {
+    outline: 1px dotted #f00;
+}
+
+.lk-linkto,
+.lk-product {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #009dfc;
+    white-space: nowrap;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+/* 空的时候不显示 */
+.lk-product:empty:after,
+.lk-linkto:empty:after {
+    display: none;
+}
+
+.lk-product:after,
+.lk-linkto:after {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    padding: 0;
+    content: " ";
+    color: #fff;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    background: url('./images/linkto.png') no-repeat;
+    background-size: 18px;
+    cursor: pointer;
+}
+
+.lk-product-media,
+.lk-linkto-media {
+    padding-right: 0;
+}
+
+.lk-product-media:after,
+.lk-linkto-media:after {
+    top: 5px;
+    right: 5px;
+}
+
+

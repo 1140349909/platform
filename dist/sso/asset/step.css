@@ -1,0 +1,390 @@
+.sso-steps {
+    font-size: 0;
+    width: 700px;
+    line-height: 1.5;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.sso-steps .sso-steps-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width:41.5%;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-wait .sso-steps-head-inner {
+    border-color: #979797;
+    background-color: #979797;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-wait .sso-steps-head-inner > .sso-steps-icon {
+    color: #fff;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-wait .sso-steps-title {
+    color: #999;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-wait .sso-steps-description {
+    color: #999;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-wait .sso-steps-tail > i {
+    background-color: #979797;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-process .sso-steps-head-inner {
+    border-color: #2bcbcd;
+    background-color: #2bcbcd;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-process .sso-steps-head-inner > .sso-steps-icon {
+    color: #fff;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-process .sso-steps-title {
+    color: #2bcbcd;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-process .sso-steps-description {
+    color: #666;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-process .sso-steps-tail > i {
+    background-color: #979797;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-finish .sso-steps-head-inner {
+    border-color: #2bcbcd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2bcbcd;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAAAXNSR0IArs4c6QAAARRJREFUKBWlkT1LA0EQhm9RLpWQpIuQgClDikBSCzZa+A/Spbra3sLKX5A6Vaq0apHays7SThACFgoa7luP81mY4pbb4lgPhtmZfd9nd+eU94+vLMt2kiR35O8DVw5mH8g9+VQp9enEwaziOF5HUVSSd0TfCQTgViD7PM8nrpBAID9pmp47QTBe8oxfDWI+CwOSZdmIGBtNS4F5BiTUEOKmJpFhFZxwrYdYE9Bg7wTzu0BWNo0H6IooRPQArFMVUnfZf5H9LfVhdd9Y8/YLhB9ajOmVPNUCTC3qR4E8Ux8ZRlvB9QeYngSWkgPqjdRv5GObz9rjRB/zUpsr8dXkZ1iB3G4OMCQy1mdWUdMmt+sxu2FT/R9KRRSN7GZTmwAAAABJRU5ErkJggg==");
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-finish .sso-steps-head-inner > .sso-steps-icon {
+    color: #2bcbcd;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-finish .sso-steps-tail > i:after {
+    width: 100%;
+    background: #2bcbcd;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    opacity: 1;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-finish .sso-steps-title {
+    color: #999;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-finish .sso-steps-description {
+    color: #999;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-error .sso-steps-head-inner {
+    border-color: #f50;
+    background-color: #fff;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-error .sso-steps-head-inner > .sso-steps-icon {
+    color: #f50;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-error .sso-steps-title {
+    color: #f50;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-error .sso-steps-description {
+    color: #f50;
+}
+
+.sso-steps .sso-steps-item.sso-steps-status-error .sso-steps-tail > i {
+    background-color: #e9e9e9;
+}
+
+.sso-steps .sso-steps-item.sso-steps-next-error .sso-steps-tail > i,
+.sso-steps .sso-steps-item.sso-steps-next-error .sso-steps-tail > i:after {
+    background-color: #f50;
+}
+
+.sso-steps .sso-steps-item.sso-steps-custom .sso-steps-head-inner {
+    background: none;
+    border: 0;
+    width: auto;
+    height: auto;
+}
+
+.sso-steps .sso-steps-item.sso-steps-custom .sso-steps-head-inner > .sso-steps-icon {
+    font-size: 20px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.sso-steps .sso-steps-item.sso-steps-custom.sso-steps-status-process .sso-steps-head-inner > .sso-steps-icon {
+    color: #2bcbcd;
+}
+
+.sso-steps .sso-steps-head,
+.sso-steps .sso-steps-main {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*border:2px solid #979797;
+width:54px;
+height:0px;*/
+
+.sso-steps .sso-steps-head {
+    background: #fff;
+}
+
+.sso-steps .sso-steps-head-inner {
+    display: block;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 20px;
+    margin-right: 8px;
+    -webkit-transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.sso-steps .sso-steps-head-inner > .sso-steps-icon {
+    color: #2bcbcd;
+    position: relative;
+    font-family:PingFangSC-Medium;
+}
+
+.sso-steps .sso-steps-head-inner > .sso-steps-icon.anticon {
+    font-size: 12px;
+}
+
+.sso-steps .sso-steps-head-inner > .sso-steps-icon.anticon-cross,
+.sso-steps .sso-steps-head-inner > .sso-steps-icon.anticon-check {
+    font-weight: bold;
+}
+
+.sso-steps .sso-steps-main {
+    margin-top: 2.5px;
+}
+
+.sso-steps .sso-steps-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #666;
+    font-weight: bold;
+    background: #fff;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.sso-steps .sso-steps-title > a:first-child:last-child {
+    color: #666;
+}
+
+.sso-steps .sso-steps-item-last{
+    width:110px;
+}
+
+.sso-steps .sso-steps-item-last .sso-steps-title {
+    padding-right: 0;
+    width: 100%;
+}
+
+.sso-steps .sso-steps-description {
+    font-size: 12px;
+    color: #999;
+}
+
+.sso-steps .sso-steps-tail {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 13px;
+    padding: 0 10px;
+}
+
+.sso-steps .sso-steps-tail > i {
+    display: inline-block;
+    vertical-align: top;
+    background: #979797;
+    height: 2px;
+    border-radius: 1px;
+    width: 100%;
+    position: relative;
+}
+
+.sso-steps .sso-steps-tail > i:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 0;
+    background: #e9e9e9;
+    height: 100%;
+    opacity: 0;
+}
+
+.sso-steps.sso-steps-small .sso-steps-head-inner {
+    border: 1px solid #ccc;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.sso-steps.sso-steps-small .sso-steps-head-inner > .sso-steps-icon.anticon {
+    display: inline-block;
+    font-size: 12px;
+    font-size: 9px \9;
+    -webkit-transform: scale(0.75) rotate(0deg);
+    -ms-transform: scale(0.75) rotate(0deg);
+    transform: scale(0.75) rotate(0deg);
+    /* IE6-IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+    zoom: 1;
+    top: 0;
+}
+
+:root .sso-steps.sso-steps-small .sso-steps-head-inner > .sso-steps-icon.anticon {
+    -webkit-filter: none;
+    filter: none;
+}
+
+:root .sso-steps.sso-steps-small .sso-steps-head-inner > .sso-steps-icon.anticon {
+    font-size: 12px;
+}
+
+.sso-steps.sso-steps-small .sso-steps-main {
+    margin-top: 0;
+}
+
+.sso-steps.sso-steps-small .sso-steps-title {
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: #666;
+    font-weight: bold;
+}
+
+.sso-steps.sso-steps-small .sso-steps-description {
+    font-size: 12px;
+    color: #999;
+}
+
+.sso-steps.sso-steps-small .sso-steps-tail {
+    top: 8px;
+    padding: 0 8px;
+}
+
+.sso-steps.sso-steps-small .sso-steps-tail > i {
+    height: 1px;
+    border-radius: 1px;
+    width: 100%;
+}
+
+.sso-steps.sso-steps-small .sso-steps-item.sso-steps-custom .sso-steps-head-inner,
+.sso-steps .sso-steps-item.sso-steps-custom .sso-steps-head-inner {
+    width: inherit;
+    height: inherit;
+    line-height: inherit;
+    border-radius: 0;
+    border: 0;
+    background: none;
+}
+
+.sso-steps-vertical .sso-steps-item {
+    display: block;
+}
+
+.sso-steps-vertical .sso-steps-tail {
+    position: absolute;
+    left: 13px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    padding: 30px 0 4px 0;
+}
+
+.sso-steps-vertical .sso-steps-tail > i {
+    height: 100%;
+    width: 1px;
+}
+
+.sso-steps-vertical .sso-steps-tail > i:after {
+    height: 0;
+    width: 100%;
+}
+
+.sso-steps-vertical .sso-steps-status-finish .sso-steps-tail > i:after {
+    height: 100%;
+}
+
+.sso-steps-vertical .sso-steps-head {
+    float: left;
+}
+
+.sso-steps-vertical .sso-steps-head-inner {
+    margin-right: 16px;
+}
+
+.sso-steps-vertical .sso-steps-main {
+    min-height: 47px;
+    overflow: hidden;
+    display: block;
+}
+
+.sso-steps-vertical .sso-steps-main .sso-steps-title {
+    line-height: 26px;
+}
+
+.sso-steps-vertical .sso-steps-main .sso-steps-description {
+    padding-bottom: 12px;
+}
+
+.sso-steps-vertical.sso-steps-small .sso-steps-tail {
+    position: absolute;
+    left: 9px;
+    top: 0;
+    padding: 22px 0 4px 0;
+}
+
+.sso-steps-vertical.sso-steps-small .sso-steps-tail > i {
+    height: 100%;
+}
+
+.sso-steps-vertical.sso-steps-small .sso-steps-title {
+    line-height: 18px;
+}
+
+.sso-steps-horizontal.sso-steps-hidden {
+    visibility: hidden;
+}
+
+.sso-steps-horizontal .sso-steps-description {
+    max-width: 100px;
+}
+
+.sso-steps-horizontal .sso-steps-item:not(:first-child) .sso-steps-head {
+    padding-left: 10px;
+    margin-left: -10px;
+}
+
+/*
+.sso-steps-gray {
+
+    .sso-steps-item.sso-steps-status-error .sso-steps-head-inner,
+    .sso-steps-head,
+    .sso-steps-title {
+        background-color: #f5f5f5;
+    }
+}
+*/

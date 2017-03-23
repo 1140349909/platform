@@ -1,0 +1,43 @@
+{
+  "name": "platform",
+  "version": "0.2.0",
+  "description": "平台管理后台",
+  "author": "asoiso",
+  "main": "server/server.js",
+  "repository": {
+    "type": "git",
+    "url": "http://git.vveshow.com/iloka/platform.git"
+  },
+  "keywords": [
+    "linkin",
+    "admin"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "fis3 release -c -w -L",
+    "start": "fis3 server start && npm run watch",
+    "dev": "fis3 release -cwd ../dist & fis3 server start --port 8062 --type node --www ../dist --no-daemon --no-browse"
+  },
+  "dependencies": {
+    "antd": "1.9.1",
+    "axios": "0.13.1",
+    "buffer": "4.6.0",
+    "classnames": "2.2.5",
+    "echarts-for-react": "^1.1.3",
+    "es6-promise": "3.2.1",
+    "immutable": "^3.8.1",
+    "is-buffer": "1.1.3",
+    "lodash": "^4.15.0",
+    "process": "0.11.2",
+    "rc-color-picker": "1.0.1",
+    "rc-qrcode": "1.0.1",
+    "react": "15.2.1",
+    "react-dom": "15.2.1",
+    "react-redux": "4.4.5",
+    "react-router": "2.4.0",
+    "react-router-redux": "^4.0.5",
+    "redux": "3.5.2",
+    "redux-immutablejs": "0.0.8",
+    "redux-thunk": "2.1.0"
+  }
+}

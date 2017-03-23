@@ -1,0 +1,36 @@
+.companyshowform-img {
+  display: block;
+  border: 1px dashed #d9d9d9;
+  -webkit-transition: border-color .3s ease;
+  transition: border-color .3s ease;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: block;
+}
+
+.companyshowform-img img {
+  width: 99.5px;
+  height: 99.5px;
+}
+
+.companyshowform-img:hover {
+  border-color: #2db7f5;
+}
+
+.companyshowform-img-text {
+  margin-top: 20px;
+}
+
+.companyshowform-img-icon {
+  font-size: 24px;
+  color: #2db7f5;
+}
+
+.companyshowform-img-p {
+  font-size: 12px;
+  line-height: 18px;
+}

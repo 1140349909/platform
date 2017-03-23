@@ -1,0 +1,47 @@
+.card-form-color {
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  height: 1px;
+}
+
+.card-form-colorbtn {
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.card-form-colorborder {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
+
+.card-form-colortriangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 15px solid #e5e5e5;
+  border-left: 15px solid transparent;
+}
+
+.card-form-radiobox {
+  margin-bottom: 15px;
+  height: 60px;
+}
+
+.card-form .ant-form-item {
+  margin-bottom: 15px;
+}
+
+.card-form .rc-color-picker-trigger {
+  width: 30px;
+  height: 30px;
+}

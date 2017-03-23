@@ -1,0 +1,24 @@
+.tker-product-list-info {
+  min-width: 200px;
+}
+
+.tker-product-list-info:before, .tker-product-list-info:after {
+  content: " ";
+  display: table;
+}
+
+.tker-product-list-info:after {
+  clear: both;
+}
+
+.tker-product-list-info-img {
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+
+.tker-product-list-info-text {
+  margin-left: 10px;
+  text-align: left;
+  float: left;
+}

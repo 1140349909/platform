@@ -1,0 +1,294 @@
+
+html {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: 100%;
+    -ms-touch-action: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+    min-width: 320px;
+    font-size: 62.5%;
+    margin: 0;
+    text-align: center;
+    word-break: break-word;
+}
+
+div, ul, ol, li, dl, dt, dd, h1, h2, h3, h5, h6, p, b, i, a, header, mark, sup, sub, hr, br, video, audio, blockquote, time, figure, figcaption, img, footer, address {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+A, A:link, A:visited, A:active {
+    color: #3a7bf7;
+    -webkit-touch-callout: none;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+A:hover {
+    color: #5991fa;
+}
+
+figure {
+    padding: 16px 0px 0px 0px;
+    margin: 0px;
+}
+
+img, p, figure, h2, h3 {
+    display: block;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    border: 0;
+    margin: 0px;
+}
+
+address {
+    font-style: normal;
+}
+
+p + p {
+    padding-top: 0px;
+}
+
+h1, h2, h3, h6, b {
+    font-weight: normal;
+}
+
+/*font*/
+@font-face {
+    font-family: "SpecialSymbol";
+    src: url("asset/PingFang-SC-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: ".PingFang-SC-Regular";
+    max-width: 100%;
+    padding: 0px 0px 20px 0px;
+    margin: 0;
+    color: #2D3033;
+    background: #fff;
+}
+
+h1 {
+    font-family: "H-SiuNiu-Bold";
+}
+
+p b {
+    color: #000;
+}
+
+/*文本两端对齐*/
+p, blockquote { /*text-align:justify;text-justify:inter-word;*/
+    text-align: left;
+}
+
+/*page左右边距*/
+p, h2, h3, figcaption, address, ul, ol {
+    margin: 0px 25px;
+}
+
+/*title*/
+p, h2, h3 {
+    color: #333;
+    line-height: 26px;
+    text-align: left;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.1em;
+    line-height: 1.55em;
+    padding: 20px 0px 13px 0px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0px 25px 0px;
+}
+
+h3 {
+    font-size: 1.5em;
+    display: block;
+    padding: 10px 0px 25px 0px;
+    font-weight: bold;
+}
+
+/*正文|图片|图片描述*/
+p {
+    overflow: hidden;
+    display: block;
+    padding: 10px 0px;
+    font-size: 1.5em;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}
+
+/*p a{border-bottom:#404040 1px solid;}*/
+figure img {
+    width: 100%;
+    border: 0;
+    padding: 0px 0px 16px 0px;
+    margin: 0px;
+    display: block;
+    overflow: hidden;
+}
+
+figcaption {
+    display: block;
+    color: #909499;
+    padding: 0px 0px 16px 0px;
+    line-height: 18px;
+    font-size: 1.2em;
+}
+
+/*头图*/
+header {
+    margin: 0px auto;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+/*用户信息*/
+address {
+    margin: 16px 0px 16px 0px;
+    padding: 0px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+h6 {
+    color: #000;
+    font-size: 1.2em;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    display: block;
+    overflow: hidden;
+}
+
+time {
+    color: #999;
+    padding: 0px 0px 7px 0px;
+    font-size: 1.1em;
+    margin-top: 0px;
+    display: block;
+    overflow: hidden;
+}
+
+h6, time, address img {
+    display: block;
+}
+
+address img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin: 0px auto;
+    border: 0;
+    display: block;
+    overflow: hidden;
+}
+
+/*导语引用*/
+blockquote {
+    position: relative;
+    padding: 20px 0px;
+    font-size: 1.3em;
+    color: #999;
+    line-height: 1.69em;
+}
+
+blockquote:before, blockquote:after {
+    background: #dbdbdb;
+    content: '';
+    width: 40%;
+    height: 1px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+blockquote:before {
+    top: 0px;
+}
+
+blockquote:after {
+    bottom: 0px;
+}
+
+/*无序有序列表*/
+ol, ul {
+    text-align: left;
+    line-height: 22px;
+    font-size: 1.4em;
+    padding: 16px 0px 16px 16px;
+    position: relative;
+    list-style-type: none;
+    letter-spacing: 0.2px;
+}
+
+ul li:before {
+    background: #c8cacc;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    margin-top: 9px;
+}
+
+ol {
+    counter-reset: sectioncounter;
+}
+
+ol li:before {
+    content: counter(sectioncounter) ".";
+    counter-increment: sectioncounter;
+    color: #909499;
+    position: absolute;
+    left: 0px;
+    font-family: "SpecialSymbol";
+}
+
+/*分割线*/
+hr {
+    height: 1px;
+    overflow: hidden;
+    border: none;
+    background: #e7e7e7;
+    max-width: 230px;
+    margin: 48px auto;
+}
+
+/*pc|ipad*/
+@media only screen and (min-width: 751px) {
+    p, h1, h2, h3, hr, ul, ol, figure, .footbar, blockquote, address, figcaption {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 664px;
+    }
+}

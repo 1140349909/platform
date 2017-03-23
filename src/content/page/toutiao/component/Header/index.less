@@ -1,0 +1,72 @@
+@import "../../../../../common/asset/variable";
+
+.editor-header {
+    position: relative;
+    z-index: 2;
+    height: 50px;
+    padding: 2px;
+    background: #272f3a;
+    .editor-header-menu {
+        margin-left: 160px;
+        text-align: center;
+        user-select: none;
+        border: 0;
+        background: #272f3a;
+    }
+
+    .iconfont {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .ant-menu-item-selected {
+        color: inherit;
+    }
+    .ant-menu-item {
+        line-height: 49px;
+        height: 49px;
+        display: inline-block !important;
+        float: none !important;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 14px !important;
+    }
+
+    .ant-menu-inline.ant-menu-sub {
+        background: #272e36;
+    }
+
+    &.ant-menu-dark.ant-menu-horizontal {
+        border-bottom-color: #2e3640;
+    }
+}
+
+.editor-header-logo {
+    position: absolute;
+    left: 18px;
+    top: 14px;
+    width: 102px;
+    height: 22px;
+    cursor: pointer;
+    background: url(logo.png) no-repeat;
+    background-size: 100%;
+}
+
+.editor-header-tips {
+    position: absolute;
+    right: 60px;
+    top: 15px;
+    height: 16px;
+    line-height: 22px;
+    color: #999;
+    .ant-spin-spinning {
+        vertical-align: top;
+        margin-right: 3px;
+    }
+    .anticon-exclamation-circle {
+        margin-right: 3px;
+        color: @error-color;
+    }
+}
+
+//@error-color

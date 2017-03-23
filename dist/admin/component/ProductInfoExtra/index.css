@@ -1,0 +1,37 @@
+.product-infoextra {
+  font-weight: 400;
+  height: 50px;
+}
+
+.product-infoextra:before, .product-infoextra:after {
+  content: " ";
+  display: table;
+}
+
+.product-infoextra:after {
+  clear: both;
+}
+
+.product-infoextra-l {
+  float: left;
+  width: 70px;
+}
+
+.product-infoextra-img {
+  border: 1px solid #d9d9d9;
+  width: 58px;
+  height: 58px;
+}
+
+.product-infoextra-r {
+  float: left;
+}
+
+.product-infoextra-p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.product-infoextra-link {
+  font-size: 12px;
+}

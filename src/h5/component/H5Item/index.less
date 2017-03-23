@@ -1,0 +1,154 @@
+.h5item{
+    border: 2px solid #fff;
+    width:94px;
+    padding:2px;
+    background-color:#fff;
+    transition: opacity .2s, filter .2s, box-shadow .2s;
+    position:relative;
+    cursor:pointer;
+    border-radius:1px;
+    overflow:hidden;
+    margin-bottom: 10px;
+    float: left;
+} 
+
+.h5item-checked{
+    border: 2px solid #009dfc;
+}
+
+.h5item-box{
+    position:relative;
+    width:100%;
+    height:100%;
+    text-align: center;
+    overflow:hidden;
+}
+
+.h5item-mastbought{
+    position:absolute;
+    width:100%;
+    height:18px;
+    bottom:1px;
+    background:rgba(0,0,0,0.50);
+    transition: all .1s;
+    pointer-events: none;
+    text-align: center;
+    color:#fff;
+    transform:translateY(19px);
+    font-size:12px;
+}
+
+.h5item:hover{
+    box-shadow: 0px 2px 6px 1px rgba(46, 54, 64, 0.4);
+}
+
+.h5item-mask{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:1px;
+    background-color:rgba(0,0,0,0);
+    opacity:0;
+    filter: alpha(opacity=0);
+    transition: all .2s;
+    pointer-events: none;
+}
+
+.h5item:hover .h5item-mask{
+    background-color:#000;
+    opacity:1;
+    filter: alpha(opacity=100);
+    background-color:rgba(0,0,0,0.5);
+    pointer-events: visible;
+}
+
+.h5item-maskbought{
+    position:absolute;
+    display:block;
+    width:100%;
+    height:18px;
+    line-height:18px;
+    text-align: center;
+    background:rgba(0,0,0,0.50);
+    bottom:0;
+    color:#fff;
+}
+
+.h5item-col1{
+    width: 100%;
+    margin-right:0;
+    height:auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.h5item-col2:nth-child(2n){
+    margin-right:0;
+}
+
+.h5item-col2{
+    height:100px;
+    width:145px;
+    margin-right:11px;
+}
+
+.h5item-col3{
+    height: 142px;
+    width: 96px;
+    margin-right: 7px;
+}
+
+.h5item-col3:nth-child(3n){
+    margin-right:0;
+}
+
+.h5item-mask-icons{
+    color:#fff;
+    height:22px;
+    line-height:22px;
+    opacity:1;
+    position: absolute;
+    right: 5px;
+    bottom: 1px;
+    text-align: right;
+}
+
+.h5item-mask-icons i{
+    font-size:14px;
+    display: inline-block;
+    margin-left:5px;
+}
+
+.h5item-mask-icons .h5item-mask-del{
+    font-size:13px;
+}
+
+.h5item-mask-fav{
+    display: inline-block;
+    position:relative;
+}
+
+.h5item-mask-fav-amplification{
+    animation:amplification 1s;
+}
+
+.h5item-mask-fav .h5item-mask-fav-zhe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index:2;
+    pointer-events: none;
+}
+
+@keyframes amplification{
+    from {
+            opacity: 1;
+            transform:scale(1);
+        }
+    to {
+        opacity:0;
+        transform:scale(3);
+    }
+}

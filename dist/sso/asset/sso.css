@@ -1,0 +1,839 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(-180deg, #19c1c3 0%, #1b75a1 100%);
+    background-image: url('/sso/asset/img/bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: #19c1c3;
+    color: #2bcbcd;
+    font-size: 14px;
+}
+
+a {
+    color: #2bcbcd;
+}
+
+/* 表单模块 */
+.sso-form {
+
+}
+
+
+.sso-form-horizontal .sso-form-label,
+.sso-form-horizontal .sso-form-control{
+    display: inline-block;
+}
+
+.sso-form-horizontal .sso-form-item{
+    height:70px;
+    margin-top:0;
+    margin-bottom:0px;
+    padding-bottom:0;
+}
+
+.sso-form-horizontal .sso-form-label{
+    font-size:14px;
+    color:#6a7276;
+    width:150px;
+    text-align: right;
+}
+
+.sso-form-horizontal .required:before{
+    display: inline-block;
+    margin-right: 1px;
+    content: "*";
+    font-family: SimSun;
+    font-size: 16px;
+    color: #f50;
+}
+
+.sso-form-horizontal .sso-form-control{
+    position: relative;
+    display: inline-block;
+}
+
+.sso-form-horizontal .soo-form-captcha-switch {
+    display: inline-block;
+    float: right;
+}
+
+.sso-form-horizontal .sso-form-explain{
+    line-height:25px;
+    font-size:12px;
+    position: absolute;
+    bottom:-25px;
+    left:0;
+    color:#999;
+}
+
+.sso-form-horizontal .sso-form-control.has-error .sso-form-explain{
+    color: #f50;
+}
+
+.sso-form-horizontal .sso-form-control.has-error .sso-form-input{
+    box-shadow: 0 0 0 2px rgba(255,85,0,.2);
+    border-color: #f50;
+}
+
+.sso-form-horizontal .sso-form-control.has-success .sso-form-explain{
+    color:#6ed56c;
+}
+.sso-form-horizontal .sso-form-input{
+    box-shadow:none; 
+    color:#7f7f7f;
+    height:auto;
+}
+
+.sso-form-horizontal .sso-form-explain.has-error{
+    color:#f50;
+}
+
+.sso-form-horizontal .sso-form-select{
+    height: 36px;
+    box-shadow: none;
+    color: #7f7f7f;
+}
+
+.sso-form-header {
+    margin: auto;
+    padding: 0 0 15px;
+    font-size: 18px;
+    color: #2bcbcd;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sso-form-inline{
+    display:inline-block; /* 现代浏览器 +IE6、7 inline 元素 */
+　　*display:inline; /* IE6、7 block 元素 */
+　　*zoom:1
+}
+
+.sso-form-hidden{
+    overflow: hidden;
+}
+
+.sso-form-tips {
+    text-align: center;
+    height: 16px;
+    color: red;
+}
+
+.sso-form-tips-retrieve {
+    margin-top: 7px;
+    margin-bottom: -3px;
+    line-height: 20px;
+}
+
+.sso-form-control {
+    zoom: 1;
+}
+
+.sso-form-control:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.sso-form-item {
+    margin: 10px 0 0;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.sso-form-label {
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+
+.sso-form-input-wrap {
+
+}
+
+.sso-form-input-wrap-l {
+    float: left;
+}
+
+.sso-form-input-wrap-r {
+    float: right;
+}
+
+
+.sso-form-input {
+    background: #ffffff;
+    display: block;
+    width: 260px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    font-size: 14px;
+    color: #2bcbcd;
+}
+
+.sso-form-input:hover{
+ border-color: rgba(44, 203, 205, 0.8);
+}
+
+.sso-form-input:focus {
+    border-color: rgba(44, 203, 205, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.sso-form-select{
+    background: #ffffff;
+    display: block;
+    width: 235px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    font-size: 14px;
+    color: #2bcbcd;
+}
+
+.sso-form-item-error .sso-form-input, .sso-form-item-error .sso-form-input:focus {
+    border-color: red;
+}
+
+.sso-form-extra {
+    height: 24px;
+    line-height: 16px;
+    clear: both;
+    margin-bottom: 15px;
+}
+
+.sso-form-remember {
+    float: left;
+}
+
+.sso-form-remember input {
+    float: left;
+}
+
+.sso-form-forget {
+    float: right;
+}
+
+.sso-form-action {
+    text-align: center;
+}
+
+.sso-form-button {
+    text-align: center;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #2bcbcd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .4s;
+    -moz-transition: all .4s; /* Firefox 4 */
+    -webkit-transition: all .4s; /* Safari 和 Chrome */
+    -o-transition: all .4s;
+}
+
+.sso-form-button:disabled {
+    cursor: not-allowed;
+}
+
+.sso-form-button:hover {
+    background-color: #27b3b5;
+}
+
+
+.sso-footer {
+    margin: 50px auto 0;
+    width: 362px;
+    height: 52px;
+    background: url('/sso/asset/img/shadow.png') no-repeat;
+}
+
+.sso-welcome {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome #webgl-canvas {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sso-index .sso-passport-content{
+    height:auto;
+    padding-bottom:15px;
+}
+
+.sso-index-p{
+    text-align: center;
+    color:#979797;
+    font-size:12px;
+    margin-top:10px;
+}
+
+/* TODO:忘记密码 */
+.sso-content-retrieve {
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.sso-content-success {
+    padding-bottom: 30px;
+}
+
+.sso-content-infosuccess {
+}
+
+.sso-content-rest {
+    padding-bottom: 40px;
+}
+
+.sso-form-captcha {
+    zoom: 1;
+}
+
+.sso-form-captcha:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.sso-form-input-captcha {
+    width: 130px;
+}
+
+.sso-form-input-smscode {
+    width: 130px;
+}
+
+.sso-form-captcha-img {
+    margin-top: 1px;
+    float: left;
+    display: block;
+    width: 83px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.soo-form-captcha-switch {
+    float: left;
+    display: block;
+    margin-left: 6px;
+    width: 30px;
+    height: 40px;
+    background-image: url('/sso/asset/img/icon_Group.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: all .4s;
+    -moz-transition: all .4s; /* Firefox 4 */
+    -webkit-transition: all .4s; /* Safari 和 Chrome */
+    -o-transition: all .4s;
+}
+
+.soo-form-captcha-switch:hover {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -moz-transform: rotate(360deg); /* Firefox */
+    -webkit-transform: rotate(360deg); /* Safari 和 Chrome */
+    -o-transform: rotate(360deg); /* Opera */
+}
+
+.sso-form-input-smscode {
+    width: 140px;
+}
+
+.sso-form-action-retrieve {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sso-form-link {
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sso-form-smscode-btn {
+    display: block;
+    margin-left:7px;
+    width: 110px;
+    height: 40px;
+}
+
+.soo-form-info {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.soo-form-info-p {
+    margin-top:20px;
+    font-size: 18px;
+    color: #2bcbcd;
+}
+
+.soo-form-info-icon {
+    display: inline-block;
+}
+
+.sso-form-captcha-imgbox{
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+    width: 83px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sso-form-captcha-imgbox img{
+    width:100%;
+    height:100%;
+}
+
+/* 通用卡片 */
+.sso-card {
+    background-color: #fff;
+    padding:10px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.24);
+    border-radius: 10px;
+}
+
+.sso-card-header {
+}
+
+.sso-card-content {
+}
+
+.sso-card-footer {
+
+}
+
+/* 登陆 && 找回密码 */
+.sso-passport {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 400px;
+    min-height: 460px;
+    margin: -230px 0 0 -200px;
+}
+
+.sso-passport-header {
+    padding-left: 25px;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+.sso-passport-header h1 {
+    background: url("/sso/asset/img/logo.png") no-repeat left center;
+    height: 74px;
+    line-height: 100px;
+    padding-left: 190px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.sso-passport-content {
+    background: #ffffff;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    padding: 30px 60px 0;
+    min-height: 300px;
+}
+
+.sso-passport-footer {
+    margin: 50px auto 0;
+    width: 362px;
+    height: 52px;
+    background: url('/sso/asset/img/shadow.png') no-repeat;
+}
+
+/* 欢迎背景&效果 */
+.sso-welcome {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome #webgl-canvas {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 忘记密码 */
+.sso-forgot {
+
+}
+
+.sso-forgot-content {
+    display: none;
+}
+
+.sso-forgot-retrieve {
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.sso-forgot-success {
+    padding-bottom: 30px;
+}
+
+.sso-forgot-rest {
+    padding-bottom: 40px;
+}
+
+/*
+企业注册
+*/
+
+.page-register{
+    overflow-y:scroll;
+}
+
+.sso-register {
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width:865px;
+    min-height: 620px;
+    background-color:#fff;
+    margin-top:120px;
+    margin-bottom: 90px;
+}
+
+.sso-register .sso-steps{
+    padding-top:50px;
+    padding-bottom: 40px;
+}
+
+.sso-register .sso-register-logo{
+    position: absolute;
+    top: -100px;
+}
+
+.sso-register .sso-register-logo h1{
+    background: url("/sso/asset/img/logo.png") no-repeat left center;
+    height: 74px;
+    line-height: 100px;
+    padding-left: 190px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.sso-register-step-user .sso-form{
+    margin-top:60px;
+    margin-left:auto;
+    margin-right:auto;
+    width:500px;
+}
+
+.sso-register-step-user .sso-form-action{
+    margin-bottom:20px;
+    margin-top:40px;
+    margin-left:auto;
+    margin-right:auto;
+    width:260px;
+}
+
+.sso-register-tab{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width:360px;
+    height:65px;
+    line-height:65px;
+    border-bottom:1px solid #e7e7e7;
+}
+
+.sso-register-tab-item{
+    display: inline-block;
+    font-size: 18px;
+    color:#979797;
+    margin-left:30px;
+    margin-right:30px;
+    cursor: pointer;
+    font-weight:500;
+}
+
+.sso-register-tab-tail{
+    position: relative;
+    top:10px;
+    display: inline-block;
+    width:1px;
+    height:30px;
+    background-color:#e7e7e7;
+}
+
+.sso-register-tab .acitve {
+    color:#2bcbcd;
+}
+
+.sso-register-step{
+    /*display: none;*/
+}
+
+.sso-register .sso-form-action{
+    margin-top:40px;
+    margin-left:auto;
+    margin-right:auto;
+    width:260px;
+}
+
+.sso-register-step-info{
+
+}
+
+.sso-register-step-info .sso-form{
+
+}
+
+.sso-register-step-info .sso-form-box:first-child{
+    margin-top:10px;
+}
+
+.sso-register-step-info .sso-form-box.sso-form-last{
+    border-bottom:none;
+    margin-bottom: 0;
+}
+
+.sso-register-step-info .sso-form-box{
+    width:740px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:25px;
+    border-bottom:1px solid #e7e7e7;
+}
+
+.sso-register-step-info{
+
+}
+
+.sso-register-step-info .sso-form-last .sso-form-control{
+    width:400px;
+}
+
+.sso-register-step-info .sso-form-action-confirm{
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+.sso-register-step-info .sso-form-box-l{
+    float: left;
+}
+
+.sso-register-step-info .sso-form-label{
+    width:110px;
+}
+
+.sso-register-step-info .sso-form-input{
+    width:215px;
+}
+
+.sso-register-step-info .sso-form-nuances{
+    text-align: center;
+    color:#999;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.sso-register-step-result-box{
+    margin-top:80px;
+    text-align: center;
+    color:#979797;
+    font-size:18px;
+}
+
+.sso-register-step-result .sso-form-button{
+    margin-top:70px;
+    display: inline-block;
+    width:260px;
+}
+
+.sso-register-step-result-p{
+    margin-top:25px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.sso-register-step-user,
+.sso-register-step-result-box,
+.sso-register-step-info{
+    display: none
+}
+
+/*
+注册协议
+*/
+.sso-agreement{
+    display: none;
+    position: fixed;
+    width:770px;
+    height:700px;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:50px;
+    padding-right:50px;
+    left: 50%;
+    top:70px;
+    margin-top:0px;
+    margin-left:-435px;
+    overflow: auto;
+    z-index: 1001;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.sso-agreement .sso-card-header{
+    font-family:PingFangSC-Medium;
+    font-size:24px;
+    color:#2bcbcd;
+    letter-spacing:0px;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.sso-agreement .sso-card-content{
+    height:560px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sso-agreement .sso-card-close{
+    position: absolute;
+    right:10px;
+    top:10px;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+.sso-agreement .sso-card-paragraph{
+    margin-bottom:20px;
+}
+
+.sso-agreement .sso-card-footer{
+    margin-top:40px;
+    position: relative;
+}
+
+.sso-agreement .sso-card-h2{
+    font-family:PingFangSC-Medium;
+    font-size:14px;
+    color:#595757;
+    letter-spacing:0px;
+    text-align:left;
+}
+
+.sso-agreement .sso-card-p{
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#898989;
+    letter-spacing:0px;
+    line-height:22px;
+    text-align:left;
+}
+
+.sso-agreement-antzoomdownin{
+    display: block;
+    animation: antZoomDownIn .5s;
+    -moz-animation: antZoomDownIn .5s; /* Firefox */
+    -webkit-animation: antZoomDownIn .5s;  /* Safari 和 Chrome */
+    -o-animation: antZoomDownIn .5s;
+}
+
+.sso-agreement-antzoomdownout{
+    animation: antZoomDownOut .5s;
+    -moz-animation: antZoomDownOut .5s; /* Firefox */
+    -webkit-animation: antZoomDownOut .5s;  /* Safari 和 Chrome */
+    -o-animation: antZoomDownOut .5s;
+    display: none;
+}
+
+.sso-agreement-mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #373737;
+    background-color: rgba(55,55,55,.6);
+    height: 100%;
+    z-index: 1000;
+    animation: fadeIn .5s;
+    -moz-animation: fadeIn .5s; /* Firefox */
+    -webkit-animation: fadeIn .5s;  /* Safari 和 Chrome */
+    -o-animation: fadeIn .5s;
+}
+
+
+/* 超小屏幕 */
+@media (max-width: 768px) {
+    .sso-passport {
+        width: 300px;
+        top: 42%;
+        margin-left: -150px;
+    }
+
+    .sso-passport-content {
+        padding: 15px 10px 0;
+    }
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <title>艾乐卡营销管家 - 注册</title>
+    <link rel="stylesheet" href="/sso/asset/base.css" />
+    <link rel="stylesheet" href="/sso/asset/step.css" />
+    <link rel="stylesheet" href="/sso/asset/sso.css" />
+    <link rel="stylesheet" href="/sso/asset/tool.css" />
+</head>
+<body class="page-register">
+    <div id="welcome" class="welcome">
+        <div id="welcomeAnimate"></div>
+    </div>
+    <div id="sso-register" class="sso-card sso-register">
+        <div class="sso-card-header">
+            <div class="sso-register-logo">
+                <h1>艾乐卡营销管家</h1>
+            </div>
+            <div class="sso-steps sso-steps-horizontal sso-steps-label-horizontal sso-steps-gray">
+                <div class="sso-steps-item sso-steps-status-process">
+                    <div class="sso-steps-tail"><i></i></div>
+                    <div class="sso-steps-step">
+                        <div class="sso-steps-head">
+                            <div class="sso-steps-head-inner">
+                                <span class="sso-steps-icon ng-scope">1</span>
+                            </div>
+                        </div>
+                        <div class="sso-steps-main">
+                            <div class="sso-steps-title">账号填写</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sso-steps-item sso-steps-status-wait">
+                    <div class="sso-steps-tail"><i></i></div>
+                    <div class="sso-steps-step">
+                        <div class="sso-steps-head">
+                            <div class="sso-steps-head-inner"><span class="sso-steps-icon">2</span></div>
+                        </div>
+                        <div class="sso-steps-main">
+                            <div class="sso-steps-title">完善资料</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sso-steps-item sso-steps-item-last sso-steps-status-wait">
+                    <div class="sso-steps-step">
+                        <div class="sso-steps-head">
+                            <div class="sso-steps-head-inner"><span class="sso-steps-icon">3</span></div>
+                        </div>
+                        <div class="sso-steps-main">
+                            <div class="sso-steps-title">企业认证</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- user部分 -->
+        <div class="sso-card-content">
+            <div class="sso-register-step sso-register-step-user">
+                <div id="tab" class="sso-register-tab">
+                    <div class="sso-register-tab-item acitve" data-type="email">邮箱注册</div>
+                    <div class="sso-register-tab-tail"></div>
+                    <div class="sso-register-tab-item" data-type="mobile">手机号注册</div>
+                </div>
+                <div class="sso-register-tab-box sso-register-step-user-email">
+                    <form id="userEmailForm" class="sso-form sso-form-horizontal">
+                        <div class="sso-form-item">
+                            <div class="sso-form-label required">
+                                <label for="email">注册邮箱：</label>
+                            </div>
+                            <div class="sso-form-control">
+                                <div class="sso-form-input-wrap">
+                                    <input id="email" name="email" type="text" placeholder="输入邮箱" class="sso-form-input"
+                                    value="">
+                                </div>
+                                <div class="sso-form-explain"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="sso-form-item">
+                            <div class="sso-form-label required">
+                                <label for="captcha">验证码：</label>
+                            </div>
+                            <div class="sso-form-control">
+                                <span class="sso-form-input-wrap">
+                                    <div class="sso-form-inline">
+                                        <input id="captcha" name="captcha" type="text" placeholder="证明你不是机器人"
+                                        class="sso-form-input sso-form-input-captcha"
+                                        value="">
+                                    </div>
+                                    <div class="sso-form-inline">
+                                        <div class="sso-form-captcha">
+                                            <div class="sso-form-captcha-imgbox">
+                                                <img id="captchaImg" src="" />
+                                            </div>
+                                            <div id="captchaSwitch" class="soo-form-captcha-switch"></div>
+
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="sso-form-action">
+                            <button type="submit" class="sso-form-button">下一步</button>
+                            <p class="sso-index-p">已经有艾乐卡营销管理账户<a href="index.html">立即登录</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="sso-register-tab-box sso-register-step-user-mobile" style="display:none">
+                    <form id="userMobileForm" class="sso-form sso-form-horizontal">
+                        <div class="sso-form-item">
+                            <div class="sso-form-label required">
+                                <label for="mobile">手机号码：</label>
+                            </div>
+                            <div class="sso-form-control">
+                                <span class="sso-form-input-wrap">
+                                    <input name="mobile" type="text" placeholder="输入注册邮箱/手机号码" class="sso-form-input"
+                                    value="">
+                                </span>
+                                <div class="sso-form-explain"></div>
+                            </div>
+                        </div>
+                        <div class="sso-form-item">
+                            <div class="sso-form-label required">
+                                <label for="smsCode">短信验证码：</label>
+                            </div>
+                            <div class="sso-form-control">
+                                <span class="sso-form-input-wrap">
+                                    <div class="sso-form-inline">
+                                        <input id="smsCode" name="smsCode" type="text" placeholder="输入短信验证码"
+                                        class="sso-form-input sso-form-input-smscode">
+                                    </div>
+                                    
+                                    <div class="sso-form-inline">
+                                        <button id="btnsmsCode" class="sso-form-smscode-btn sso-form-button">获取验证码</button>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="sso-form-action">
+                            <button type="submit" class="sso-form-button">下一步</button>
+                            <p class="sso-index-p">还没有艾乐卡营销管家账户？<a href="register.html">立即注册</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- info部分 -->
+            <div class="sso-register-step sso-register-step-info">
+                <form id="infoForm" class="sso-form sso-form-horizontal">
+                    <div class="sso-form-box fix">
+                        <div class="sso-form-box-l">
+                            <div class="sso-form-item">
+                                <div class="sso-form-label required">
+                                    <label for="name">企业名称：</label>
+                                </div>
+                                <div class="sso-form-control">
+                                    <div class="sso-form-input-wrap">
+                                        <input id="name" name="name" tabindex="1" type="text" placeholder="输入名称" class="sso-form-input"
+                                        value="">
+                                    </div>
+                                    <div class="sso-form-explain"></div>
+                                </div>
+                            </div>
+                            <!-- 增加此input可以让表单数据不填充 -->
+                            <input type="password"/ style="display:none">
+                            <div class="sso-form-item">
+                                <div class="sso-form-label">
+                                    <label for="products">主营商品：</label>
+                                </div>
+                                <div class="sso-form-control">
+                                    <div class="sso-form-input-wrap">
+                                        <input id="products" name="products" tabindex="3" type="text" placeholder="如生鲜，水果，服饰等" autocomplete="off" class="sso-form-input">
+                                    </div>
+                                    <div class="sso-form-explain"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sso-form-box-l">
+                            <div class="sso-form-item">
+                                <div class="sso-form-label required">
+                                    <label for="business">经营类型：</label>
+                                </div>
+                                <div class="sso-form-control">
+                                    <div class="sso-form-input-wrap">
+                                        <select id="business" tabindex="2" class="sso-form-select" name="business">
+                                            <option value="食品">食品</option>
+                                            <option value="电子产品">电子产品</option>
+                                            <option value="休闲美妆">休闲美妆</option>
+                                            <option value="日用百货">日用百货</option>
+                                            <option value="家用电器">家用电器</option>
+                                            <option value="虚拟服务">虚拟服务</option>
+                                            <option value="其他">其他</option>
+                                        </select>
+                                    </div>
+                                    <div class="sso-form-explain"></div>
+                                </div>
+                            </div>
+                            <div class="sso-form-item">
+                                <div class="sso-form-label required">
+                                    <label for="password">管理密码：</label>
+                                </div>
+                                <div class="sso-form-control">
+                                    <div class="sso-form-input-wrap">
+                                        <input id="password" tabindex="4" name="password" autocomplete="off" type="password" placeholder="设定6-16位数字+字母密码" class="sso-form-input">
+                                    </div>
+                                    <div class="sso-form-explain"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sso-form-box fix">
+                        <div class="sso-form-box-l">
+                            <div class="sso-form-item">
+                                <div class="sso-form-label required">
+                                    <label for="contactname">联系人：</label>
+                                </div>
+                                <div class="sso-form-control">
+                                    <div class="sso-form-input-wrap">
+                                        <input id="contactname" tabindex="5" name="contactname" type="text" placeholder="输入联系人" class="sso-form-input"
+                                        value="">
+                                    </div>
+                                    <div class="sso-form-explain"></div>
+                                </div>
+                            </div>
+                            <div class="sso-form-item">
+                                <div class="sso-form-label required">
+                                    <label for="contactemail">联系邮箱：</label>
+                                </div>
+                                <div class="sso-form-control">
+                                    <div class="sso-form-input-wrap">
+                                        <input id="contactemail" tabindex="7" name="contactemail" type="text" placeholder="输入联系邮箱" class="sso-form-input"
+                                        value="">
+                                    </div>
+                                    <div class="sso-form-explain"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sso-form-box-l">
+                            <div class="sso-form-item">
+                                <div class="sso-form-label required">
+                                    <label for="contactmobile">联系电话：</label>
+                                </div>
+                                <div class="sso-form-control">
+                                    <div class="sso-form-input-wrap">
+                                        <input id="contactmobile" tabindex="6" name="contactmobile" type="text" placeholder="正确输入电话，以便后续认证" class="sso-form-input"
+                                        value="">
+                                    </div>
+                                    <div class="sso-form-explain"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sso-form-box sso-form-last fix">
+                        <div class="sso-form-item">
+                            <div class="sso-form-label required">
+                                <label for="uin">标识设定：</label>
+                            </div>
+                            <div class="sso-form-control">
+                                <div class="sso-form-input-wrap">
+                                    <input id="uin" name="uin" tabindex="8" type="text" placeholder="输入4-12个字母标识" class="sso-form-input"
+                                    value="">
+                                </div>
+                                <div class="sso-form-explain">公司在平台运营的唯一标识，比如企业名称的字母缩写，限制4-12个字母</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sso-form-nuances">
+                        <div class="sso-form-control">
+                           <input type="checkbox" tabindex="9" name="nuances">
+                           已查看并同意<a id="nuancesBtn" href="#">《艾乐卡营销管家服务协议》</a>
+                           <div class="sso-form-explain"></div>
+                       </div>
+                   </div>
+                   <div class="sso-form-action sso-form-action-confirm">
+                    <button id="confirmBtn" type='submit' class="sso-form-button">确认提交</button>
+                </div>
+            </form>
+            </div>
+            <div class="sso-register-step sso-register-step-result">
+                <div class="sso-register-step-result-box sso-register-step-result-success">
+                    <div class="sso-register-step-result-icon">
+                        <img src="/sso/asset/img/pass.png">
+                    </div>
+                    <p class="sso-register-step-result-p">
+                        恭喜，您的账号已审核通过！<br/>
+                        开始玩转营销吧！
+                    </p>
+                    <a href="javascript:;" id="resultSuccessBtn" class="sso-form-button">玩转营销</a>
+                </div>
+
+                <div class="sso-register-step-result-box sso-register-step-result-waiting">
+                    <div class="sso-register-step-result-icon">
+                        <img src="/sso/asset/img/time.png">
+                    </div>
+                    <p class="sso-register-step-result-p">
+                        艾乐卡营销管家会24小时内跟您联系，请耐心等待!<br/>
+                        联系客服：021-2345678
+                    </p>
+                    <a href="javascript:;" id="resultLoginBtn" class="sso-form-button">请登录
+                    </a>
+                    <a href="javascript:;" id="resultWaitingBtn" class="sso-form-button">继续完善资料
+                    </a>
+                </div>
+
+                <div class="sso-register-step-result-box sso-register-step-result-err">
+                    <div class="sso-register-step-result-icon">
+                        <img src="/sso/asset/img/fail.png">
+                    </div>
+                    <p class="sso-register-step-result-p">
+                        艾乐卡营销管家会24小时内跟您联系，请耐心等待<br/>
+                        联系客服：021-2345678
+                    </p>
+                    <a href="javascript:;" class="sso-form-button">重新申请</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sso-agreement" class="sso-agreement sso-card">
+        <div class="sso-card-header">
+            艾乐卡营销管家账号规则
+            <img class="sso-card-close sso-agreement-close" src="/sso/asset/img/fail.png"/>
+        </div>
+        <div class="sso-card-content">
+            <div class="sso-card-paragraph">
+                <h2 class="sso-card-h2">
+                    小标题
+                </h2>
+                <p class="sso-card-p">
+                    发球开始时，球自然地置于不持拍手的手掌上，手掌张开，保持静止。
+                    发球时，发球员须用手将球几乎垂直地向上抛起，不得使球旋转，并使球在离开不执拍手的手掌之后上升不少于16公分，球下降到被击出前不能碰到任何物体，亦不得以身体挡住抛球轨迹，使对方看不见抛球路径，亦视同犯规。
+                    当球从抛起的最高点下降时，发球员方可击球，使球首先触及本方台区，然后越过或绕过球网装置，再触及接发球员的台区，若球在发球过程触碰到球网，必须重新发球。双打中，球应先后触及发球员和接发球员的右半区。
+                    从发球开始，到球被击出，球要始终在台面以上和发球员的端线以外以防桌内发球犯规，而且不能被发球员或其双打同伴的身体或衣服的任何部分挡住，否则亦视同犯规。
+                    在运动员发球时，球与球拍接触的一瞬间，球与网柱连线所形成的虚拟三角形之内和一定高度的上方不能有任何遮挡物，并且其中一名裁判员要能看清运动员的击球点。
+                </p>
+            </div>
+            <div class="sso-card-paragraph">
+                <h2 class="sso-card-h2">
+                    小标题
+                </h2>
+                <p class="sso-card-p">
+                    发球开始时，球自然地置于不持拍手的手掌上，手掌张开，保持静止。
+                    发球时，发球员须用手将球几乎垂直地向上抛起，不得使球旋转，并使球在离开不执拍手的手掌之后上升不少于16公分，球下降到被击出前不能碰到任何物体，亦不得以身体挡住抛球轨迹，使对方看不见抛球路径，亦视同犯规。
+                    当球从抛起的最高点下降时，发球员方可击球，使球首先触及本方台区，然后越过或绕过球网装置，再触及接发球员的台区，若球在发球过程触碰到球网，必须重新发球。双打中，球应先后触及发球员和接发球员的右半区。
+                    从发球开始，到球被击出，球要始终在台面以上和发球员的端线以外以防桌内发球犯规，而且不能被发球员或其双打同伴的身体或衣服的任何部分挡住，否则亦视同犯规。
+                    在运动员发球时，球与球拍接触的一瞬间，球与网柱连线所形成的虚拟三角形之内和一定高度的上方不能有任何遮挡物，并且其中一名裁判员要能看清运动员的击球点。
+                </p>
+            </div>
+            <div class="sso-card-paragraph">
+                <h2 class="sso-card-h2">
+                    小标题
+                </h2>
+                <p class="sso-card-p">
+                    发球开始时，球自然地置于不持拍手的手掌上，手掌张开，保持静止。
+                    发球时，发球员须用手将球几乎垂直地向上抛起，不得使球旋转，并使球在离开不执拍手的手掌之后上升不少于16公分，球下降到被击出前不能碰到任何物体，亦不得以身体挡住抛球轨迹，使对方看不见抛球路径，亦视同犯规。
+                    当球从抛起的最高点下降时，发球员方可击球，使球首先触及本方台区，然后越过或绕过球网装置，再触及接发球员的台区，若球在发球过程触碰到球网，必须重新发球。双打中，球应先后触及发球员和接发球员的右半区。
+                    从发球开始，到球被击出，球要始终在台面以上和发球员的端线以外以防桌内发球犯规，而且不能被发球员或其双打同伴的身体或衣服的任何部分挡住，否则亦视同犯规。
+                    在运动员发球时，球与球拍接触的一瞬间，球与网柱连线所形成的虚拟三角形之内和一定高度的上方不能有任何遮挡物，并且其中一名裁判员要能看清运动员的击球点。
+                </p>
+            </div>
+            <div class="sso-card-paragraph">
+                <h2 class="sso-card-h2">
+                    小标题
+                </h2>
+                <p class="sso-card-p">
+                    发球开始时，球自然地置于不持拍手的手掌上，手掌张开，保持静止。
+                    发球时，发球员须用手将球几乎垂直地向上抛起，不得使球旋转，并使球在离开不执拍手的手掌之后上升不少于16公分，球下降到被击出前不能碰到任何物体，亦不得以身体挡住抛球轨迹，使对方看不见抛球路径，亦视同犯规。
+                    当球从抛起的最高点下降时，发球员方可击球，使球首先触及本方台区，然后越过或绕过球网装置，再触及接发球员的台区，若球在发球过程触碰到球网，必须重新发球。双打中，球应先后触及发球员和接发球员的右半区。
+                    从发球开始，到球被击出，球要始终在台面以上和发球员的端线以外以防桌内发球犯规，而且不能被发球员或其双打同伴的身体或衣服的任何部分挡住，否则亦视同犯规。
+                    在运动员发球时，球与球拍接触的一瞬间，球与网柱连线所形成的虚拟三角形之内和一定高度的上方不能有任何遮挡物，并且其中一名裁判员要能看清运动员的击球点。
+                </p>
+            </div>
+        </div>
+        <div class="sso-card-footer">
+            <a href="javascript:;" class="sso-form-button sso-agreement-close">已阅读并同意此协议</a>
+        </div>
+    </div>
+    <div class="sso-agreement-mask"></div>    <!-- <script src="./asset/jquery-validate.js"></script> -->
+<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/three.js/r68/three.min.js"></script>
+<script src="/sso/asset/base.js"></script>
+<script src="/sso/asset/wave.js"></script>
+<script src="/sso/asset/config.js"></script>
+<script src="/sso/asset/common.js"></script>
+<script src="/sso/asset/register.js"></script>
+<script src="/sso/asset/validate.js"></script>
+<script>
+        LK.register.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+//自定义antd模态框样式
+.ant-modal.template-preview-container {
+    //top: 291px;
+    top:100px;
+}
+
+.template-preview-container{
+
+    .ant-modal-body{
+        padding: 0;
+    }
+
+    .ant-modal-content{
+        height: 649px;
+        background:#f5f5f5;
+        border-radius:4px;
+    }
+
+    .ant-modal-close{
+        display: none;
+    }
+    .ant-modal-header{
+        display: none;
+    }
+}
+
+.template-preview-container-left{
+    width: 460px;
+    height: 649px;
+    float: left;
+}
+
+.template-preview-container-right{
+    background:#ffffff;
+    float: left;
+    height: 649px;
+    width:316px;
+}
+
+.template-preview-mobile{
+    position: relative;
+    //margin: 0 auto;
+    top:52px;
+    left:71px;
+    width: 268px;
+    height: 545px;
+    background: url('./img/mobile.png') no-repeat;
+}
+
+.template-preview-common-bg{
+    position: absolute;
+    top: 55px;
+    left: 13px;
+    width: 240px;
+    height: 426px;
+}
+
+.template-preview-fix-mobile{
+    width: 320px;
+    height: 486px;
+    position: absolute;
+    transform: scale(0.75,0.87);
+    top:25px;
+    left:-27px;
+}
+
+.template-preview-common-bg img{
+    width: 100%;
+    height: 100%;
+}
+
+.template-preview-arrow{
+    position: absolute;
+    top:516px;
+    left: 359px;
+}
+
+.template-preview-arrow div:first-child{
+    margin-bottom: 16px;
+}
+
+.template-preview-arrow-up{
+    background: url('./img/review_arrow_up.png') no-repeat;
+    width: 34px;
+    height: 34px;
+}
+
+.template-preview-arrow-up:hover,.template-preview-arrow-up:focus{
+    background: url('./img/review_arrow_up_highlight.png') no-repeat;
+}
+
+.template-preview-arrow-down{
+    background: url('./img/review_arrow_down.png') no-repeat;
+    width: 34px;
+    height: 34px;
+}
+
+.template-preview-arrow-down:hover,.template-preview-arrow-down:focus{
+    background: url('./img/review_arrow_down_highlight.png') no-repeat;
+}
+
+.template-preview-common-text{
+    font-family:PingFangSC-Medium;
+    letter-spacing:0;
+}
+
+.template-preview-title{
+    margin: 48px 31px 0;
+    text-align:left;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+
+.template-preview-title-text{
+    font-size:18px;
+    color:#39404a;
+}
+
+.template-preview-category-text{
+    font-size:14px;
+    color:#999999;
+}
+
+.template-preview-remen-text{
+    font-size:12px;
+    color:#666666;
+}
+
+.template-preview-card{
+    margin: 42px 54px 20px 59px;
+    //padding: 19px;
+    background:#ffffff;
+    border:1px solid #e7e7e7;
+    border-radius:4px;
+    width:206px;
+    height:233px;
+}
+
+.template-preview-card img {
+    width: 166px;
+    height: 165px;
+}
+
+.template-preview-card-text{
+    //margin-top: 12px;
+    text-align: center;
+}
+
+.template-preview-favourite-button{
+    background:#ffffff;
+    border:1px solid #009dfc;
+    border-radius:77px;
+    font-family:PingFangSC-Medium;
+    font-size:16px;
+    color:#009dfc;
+    letter-spacing:0;
+    text-align:center;
+    width: 160px;
+    height: 40px;
+}
+
+.template-preview-use-button{
+    background:#009dfc;
+    border-radius:77px;
+    font-family:PingFangSC-Medium;
+    font-size:16px;
+    color:#ffffff;
+    letter-spacing:0;
+    text-align:center;
+    width: 160px;
+    height: 40px;
+}
+
+.template-preview-arrow-left{
+    background: url('./img/arrow_left.png') no-repeat;
+    position: absolute;
+    left:-70px;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.template-preview-arrow-left:hover,.template-preview-arrow-left:focus{
+    background: url('./img/arrow_left_highlight.png') no-repeat;
+    cursor: pointer;
+}
+
+.template-preview-arrow-right{
+    background: url('./img/arrow_right.png') no-repeat;
+    position: absolute;
+    right:-70px;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.template-preview-arrow-right:hover,.template-preview-arrow-right:focus{
+    background: url('./img/arrow_right_highlight.png') no-repeat;
+    cursor: pointer;
+}
+
+.template-preview-close{
+    background: url('./img/review_close.png') no-repeat;
+    position: absolute;
+    right:-60px;
+    top: -6%;
+    width: 36px;
+    height: 36px;
+}
+
+.template-preview-close:hover,.template-preview-close:focus{
+    cursor: pointer;
+}

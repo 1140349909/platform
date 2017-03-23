@@ -1,0 +1,43 @@
+.auditRecordModal {
+    .ant-spin-container {
+        max-height: 400px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .current-record-status {
+        font-size: 16px;
+        span {
+            color: #00a0e9;
+        }
+    }
+    .current-record-status {
+        line-height: 30px;
+    }
+    .record-con {
+        border-bottom: 1px solid #eaeaea;
+        overflow: hidden;
+        .record-rounds {
+            width: 100px;
+            display: inline-block;
+            float: left;
+        }
+        .record-info {
+            display: inline-block;
+            margin-right: 20px;
+            .record-desc, .record-child {
+                width: 100px;
+                display: inline-block;
+            }
+        }
+    }
+    .record-con:last-child {
+        border-bottom: none;
+    }
+    .ant-modal-body {
+        padding-bottom: 0;
+    }
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+        padding: 8px;
+    }
+}
+

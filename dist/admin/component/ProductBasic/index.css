@@ -1,0 +1,155 @@
+@charset "UTF-8";
+.product-basic {
+  width: 900px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 770px;
+}
+
+.product-basic h2 {
+  color: #666;
+  font-family: lato, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  margin-bottom: 1em;
+  font-weight: 500;
+  clear: both;
+  font-size: 14px;
+}
+
+.product-basic.product-basicshow {
+  padding-bottom: 0;
+}
+
+.product-basic-info {
+  height: 311px;
+}
+
+.product-basic-btnshow {
+  text-align: right !important;
+  border-top: 1px solid #e9e9e9;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: -14px;
+}
+
+.product-basic-uploadbox {
+  position: relative;
+}
+
+.product-basicshow {
+  width: 720px;
+}
+
+.product-basic-upload {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #646464;
+  transition: all .3s;
+  -moz-transition: all .3s;
+  /* Firefox 4 */
+  -webkit-transition: all .3s;
+  /* Safari 和 Chrome */
+  -o-transition: all .3s;
+}
+
+.product-basic-upload:hover {
+  background-color: #282828;
+  box-shadow: 0 0 10px #e9e9e9;
+  cursor: pointer;
+}
+
+.product-basic-upload-tip {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  height: 25px;
+  width: 100%;
+  line-height: 25px;
+  text-align: center;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.product-basic-upload-info {
+  position: absolute;
+  top: 18px;
+  font-size: 12px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.product-basic-btns {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.product-basic-btns > button {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.product-basic-uploadimg {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.product-basic-line {
+  height: 1px;
+  border-bottom: 1px dashed #d9d9d9;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.product-basic-trade {
+  height: 334px;
+}
+
+.product-basic-show {
+  width: 100%;
+  display: inline-block;
+}
+
+.product-basic-hide {
+  width: 100%;
+  display: none;
+}
+
+.product-basic .add-uploadbanner-img {
+  width: 100%;
+}
+
+.product-basic-upload-pending {
+  padding-top: 20px;
+  width: 100px;
+  height: 80px;
+  text-align: center;
+}
+
+.product-basic-upload-pending .ant-spin-dot:before, .ant-spin-dot:after {
+  background-color: #fff;
+}
+
+.product-basic-upload-pendingtext {
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+}
+
+.product-basic-readonly {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(10, 10, 10, 0.5);
+  z-index: 1;
+}

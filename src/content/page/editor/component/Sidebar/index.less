@@ -1,0 +1,109 @@
+.editor-sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 480px;
+    .ant-menu-root {
+        width: 160px;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        user-select: none;
+        background: #2e3640;
+    }
+
+    > .ant-menu {
+        margin-bottom: 20px;
+    }
+
+    .editor-sidebar-menu-text {
+        display: inline-block;
+        min-width: 36px;
+    }
+    .ant-menu-submenu > .ant-menu-submenu-title {
+        font-size: 14px;
+        .iconfont {
+            margin-right: 8px;
+        }
+    }
+
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+        background: #272e36;
+    }
+    .ant-menu-dark.ant-menu-inline .ant-menu-item-selected {
+        background: #009dfc;
+    }
+}
+
+.editor-sidebar-menu {
+    .ant-menu-item {
+        padding-left: 50px !important;
+        .icon-tianjia, .icon-tianjiachenggong, .ant-switch {
+            margin-left: 15px;
+        }
+    }
+}
+
+.editor-sidebar-panel {
+    position: absolute;
+    left: 160px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #e5e9f2;
+}
+
+.editor-sidebar-panel-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 14px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.editor-sidebar-panel-header-action {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    .iconfont {
+        color: #39404a;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .icon-undoIcon {
+        font-size: 14px;
+        margin-right: 8px;
+    }
+}
+
+.editor-sidebar-panel-content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+}
+
+// 标题
+.editor-sidebar-title {
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #39404a;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// tab
+.editor-sidebar-tabs {
+    margin: 11px;
+    text-align: center;
+}

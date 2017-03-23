@@ -1,0 +1,84 @@
+<!--[修改] 2016.10.08 by jason-->
+<!--1.取消原有的搜索，转而支持复制mp3地址或上传MP3-->
+<!--2.修改的时候支持-->
+<!--3.C端渲染转换-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>插入音乐</title>
+    <script type="text/javascript" src="../internal.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="../../third-party/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="music.css">
+</head>
+<body>
+<div class="wrapper">
+    <!--隐藏搜索-->
+    <div style="display: none">
+        <div class="searchBar">
+            <input id="J_searchName" type="text"/>
+            <input type="button" class="searchBtn" id="J_searchBtn">
+        </div>
+        <div class="resultBar" id="J_resultBar">
+            <div class="loading" style="display:none"></div>
+            <div class="empty"><var id="lang_input_tips"></var></div>
+        </div>
+    </div>
+    <!--新增-->
+    <div id="audioTab">
+        <div id="tabHeads" class="tabhead">
+            <span tabSrc="audio" class="focus" data-content-id="audio">插入音乐</span>
+        </div>
+        <div id="tabBodys" class="tabbody">
+            <div id="audio" class="panel focus">
+                <table>
+                    <tr>
+                        <td><label for="J_onlineMusicUrl" class="url">
+                            <var id="lang_audio_url"></var>
+                        </label></td>
+                        <!--TODO：添加url校验-->
+                        <td>
+                            <input id="J_onlineMusicUrl" type="url" placeholder="输入MP3歌曲链接地址">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div style="margin: 0 5px;color: red;display: none;" id="urlError">
+                                链接有误
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div style="padding: 75px 150px 0;text-align: center;">
+
+                    <label for="J_uploadBtn"
+                           style="display: block;background: #00b7ee;color: white;padding: 15px 45px;border-radius: 5px;font-size: 16px;cursor: pointer">
+                        上传MP3
+                    </label>
+                    <input id="J_uploadBtn" type="file" style="display: none" accept="audio/mpeg"/>
+                    <br>
+
+                </div>
+                <p style="text-align: center">支持格式为MP3，大小限制在1M以内</p>
+            </div>
+
+        </div>
+    </div>
+    <!--保留-->
+    <div id="J_preview"></div>
+</div>
+<script type="text/javascript" src="music.js"></script>
+<script type="text/javascript">
+    var music = new Music;
+    dialog.onok = function () {
+        music.exec();
+    };
+    dialog.oncancel = function () {
+        $G('J_preview').innerHTML = "";
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.card-style {
+  width: 290px;
+  height: 155px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px #949494;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.card-style-hd {
+  margin-left: 30px;
+  padding-top: 15px;
+  zoom: 1;
+}
+
+.card-style-hd:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.card-style-hdimg {
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.card-style-hdimg img {
+  width: 40px;
+  height: 40px;
+}
+
+.card-style-name {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 40px;
+  text-shadow: 1px 1px 1px #333;
+  -webkit-text-shadow: 1px 1px 1px #333;
+  -moz-text-shadow: 1px 1px 1px #333;
+}
+
+.card-style-ft {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.card-style-title {
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #333;
+  -webkit-text-shadow: 1px 1px 1px #333;
+  -moz-text-shadow: 1px 1px 1px #333;
+  height: 20px;
+}
+
+.card-style-number {
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #333;
+  -webkit-text-shadow: 1px 1px 1px #333;
+  -moz-text-shadow: 1px 1px 1px #333;
+  height: 20px;
+}

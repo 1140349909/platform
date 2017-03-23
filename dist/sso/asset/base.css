@@ -1,0 +1,126 @@
+/*
+* @author Lijian
+* @version v 1.0 2012/11/23
+* @201305081609
+*/
+
+/*-- reset --*/
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, article, aside, dialog, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, details, summary { margin: 0; padding: 0; }
+section, article, aside, header, footer, nav, dialog, figure { display: block; }
+html {font-size: 12px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body{line-height: 1.5; color: #333333; background-color:#ffffff; }
+a {text-decoration: none; color:#0088cc; }
+a:active,a:hover,a:focus{outline: 0;}
+ol, ul { list-style: none; }
+img, iframe, fieldset { border: 0; }
+img { vertical-align: top; }
+table { border-collapse: collapse; border-spacing: 0; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; }
+q:before, q:after, blockquote:before, blockquote:after { content:''; }
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+/*-- //reset --*/
+
+/*-- common --*/
+/* display */
+#page .hidden,.hidden { display:none; }
+#page .shown,.shown { display:block; }
+.invisible { visibility:hidden; }
+.visible { visibility:visible; }
+.hidden {overflow: hidden};
+.inline-block { display:inline-block; *display:inline;*zoom:1;}
+/* clear */
+.fix,.clearfix,#content { display: inline-block; }
+.fix,.clearfix,#content { display: block; }
+.clear, .fix:after,.clearfix:after,#content:after { display: block; visibility: hidden; overflow: hidden; clear: both; height: 0; content: ""; }
+/* text */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-hidden { overflow:hidden; text-indent:100%; white-space:nowrap; }
+.text-overflow { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.text-break { word-wrap: break-word; word-break: break-all; }
+/*-- //common --*/
+
+
+
+/*淡入动画*/
+@-webkit-keyframes FadeIn {
+	0% {
+	opacity:0;
+}
+to {
+	opacity:1
+}
+}@keyframes FadeIn {
+	0% {
+	opacity:0;
+}
+to {
+	opacity:1
+}
+}
+
+/*淡出动画*/
+@-webkit-keyframes FadeOut {
+	0% {
+	opacity:1;
+}
+to {
+	opacity:0;
+}
+}@keyframes FadeOut {
+	0% {
+	opacity:1;
+}
+to {
+	opacity:0;
+}
+}
+
+/*淡入动画放大*/
+@keyframes antZoomDownIn {
+	0% {
+	opacity:0;
+	-webkit-transform-origin:50% 100%;
+	transform-origin:50% 100%;
+	-webkit-transform:scale(.8);
+	transform:scale(.8)
+}
+to {
+	-webkit-transform-origin:50% 100%;
+	transform-origin:50% 100%;
+	-webkit-transform:scale(1);
+	transform:scale(1)
+}
+}@-webkit-keyframes antZoomDownOut {
+	0% {
+	-webkit-transform-origin:50% 100%;
+	transform-origin:50% 100%;
+	-webkit-transform:scale(1);
+	transform:scale(1)
+}
+to {
+	opacity:0;
+	-webkit-transform-origin:50% 100%;
+	transform-origin:50% 100%;
+	-webkit-transform:scale(.8);
+	transform:scale(.8)
+}
+}
+
+
+/*淡出动画缩小*/
+@keyframes antZoomDownOut {
+	0% {
+	-webkit-transform-origin:50% 100%;
+	transform-origin:50% 100%;
+	-webkit-transform:scale(1);
+	transform:scale(1)
+}
+to {
+	opacity:0;
+	-webkit-transform-origin:50% 100%;
+	transform-origin:50% 100%;
+	-webkit-transform:scale(.8);
+	transform:scale(.8)
+}

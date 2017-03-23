@@ -1,0 +1,15 @@
+.ant-layout-header {
+  background: #fff;
+}
+
+.ant-layout-header .header-menu {
+  padding-right: 20px;
+}
+
+.ant-layout-header .header-menu > li {
+  float: left;
+}
+
+.ant-layout-header .header-menu .header-menu-user {
+  float: right;
+}

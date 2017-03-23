@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <title>艾乐卡营销管家 - 登陆</title>
+    <link rel="stylesheet" href="/sso/asset/base.css" />
+    <link rel="stylesheet" href="/sso/asset/sso.css" />
+</head>
+<body class="page-index">
+<div id="welcome" class="welcome">
+    <div id="welcomeAnimate"></div>
+</div>
+<div id="sso" class="sso-passport sso-index">
+    <div class="sso-passport-header">
+        <h1>艾乐卡营销管家</h1>
+    </div>
+    <div class="sso-passport-content">
+        <div class="sso-form">
+            <div id="tips" class="sso-form-tips"></div>
+            <div class="sso-form-item">
+                <div class="sso-form-label">
+                    <label for="username">账号</label>
+                </div>
+                <div class="sso-form-control">
+                    <span class="sso-form-input-wrap">
+                        <input id="username" name="username" type="text" placeholder="请输入邮箱或手机" class="sso-form-input"
+                               value="">
+                    </span>
+                </div>
+            </div>
+            <div class="sso-form-item">
+                <div class="sso-form-label">
+                    <label for="password">密码</label>
+                </div>
+                <div class="sso-form-control">
+                    <span class="sso-form-input-wrap">
+                        <input id="password" name="password" type="password" placeholder="请输入密码" class="sso-form-input"
+                               value="">
+                    </span>
+                </div>
+            </div>
+            <div class="sso-form-extra">
+                <a class="sso-form-forget" href="forgot.html">忘记密码</a>
+                <label class="sso-form-remember"><input id="remember" type="checkbox"/>记住账号</label>
+            </div>
+            <div class="sso-form-action">
+                <button id="btnLogin" class="sso-form-button">登录</button>
+            </div>
+            <p class="sso-index-p">还没有艾乐卡营销管家账户？<a href="register.html">立即注册</a></p>
+        </div>
+    </div>
+    <div class="sso-passport-footer"></div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/three.js/r68/three.min.js"></script>
+<script src="/sso/asset/base.js"></script>
+<script src="/sso/asset/wave.js"></script>
+<script src="/sso/asset/config.js"></script>
+<script src="/sso/asset/common.js"></script>
+<script src="/sso/asset/passport.js"></script>
+<script>
+    LK.passport.init();
+</script>
+</body>
+</html>

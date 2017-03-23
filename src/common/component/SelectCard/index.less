@@ -1,0 +1,42 @@
+.selectcard{
+    position: relative;
+    display: table;
+    background:#f9fafc;
+    border-width: 1px;
+    border-color:#c0ccda;
+    border-style: solid;
+    border-radius:2px;
+    cursor: pointer;
+    transition: border-color .3s, background-color .3s;
+
+    &:hover{
+        border-width: 1px;
+        border-color:#009dfc;
+        background-color:#f4f7fd;
+    }
+}
+
+.selectcard-children{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.selectcard-active{
+    border-width: 2px !important;
+    border-color:#009dfc !important;
+    background-color:#fff;
+    &:hover{
+        background-color:#f9fafc;
+    }
+}
+.selectcard-icon{
+    position: absolute;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    right:0;
+    bottom:-1px;
+    font-size:21px;
+    color:#009dfc;
+}

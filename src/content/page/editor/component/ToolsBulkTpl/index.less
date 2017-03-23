@@ -1,0 +1,167 @@
+// 版式列表
+.editor-sidebar-panel-header-title {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    p:last-child {
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+    }
+}
+
+.bulk-tpl-list {
+    .fenbankuai {
+        color: #009dfc;
+    }
+}
+
+.bulk-tpl-item {
+    position: relative;
+    width: 308px;
+    height: 200px;
+    background: #ffffff;
+    margin: 6px;
+    min-height: 34px;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    img {
+        max-width: 100%;
+    }
+    &:hover .bulk-tpl-item-masking-top {
+        opacity: 0.3;
+    }
+    &:hover .bulk-tpl-item-masking-action {
+        opacity: 1;
+    }
+
+}
+
+.bulk-detail-item {
+    position: relative;
+    &:hover {
+        box-shadow: 0px 2px 5px 1px rgba(46, 54, 64, 0.40);
+    }
+}
+
+.bulk-tpl-item-masking {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+.bulk-tpl-item-masking-top {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    opacity: 0;
+}
+
+.bulk-tpl-item-masking-action {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulk-tpl-item-masking-action-do {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    div {
+        width: 30px;
+        height: 30px;
+        &:hover + span {
+            .showTip
+        }
+    }
+    span {
+        display: block;
+        opacity: 0;
+        color: #FFFFFF;
+        width: 60px;
+        text-align: center;
+        position: absolute;
+        left: -15px;
+        top: 38px;
+    }
+}
+
+.bulk-tpl-item-masking-action-part {
+    margin-right: 44px;
+}
+
+.bulk-tpl-item-masking-action-part > div {
+
+    background: url("partitioning.png");
+}
+
+.bulk-tpl-item-masking-action-full > div {
+    background: url("package.png");
+}
+
+.bulk-tpl-list-bought {
+    .bulk-tpl-item-masking-action-part {
+        display: none;
+    }
+}
+
+.bulk-tpl-item-content {
+    padding: 10px;
+}
+
+.bulk-tpl-item-action {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    right: 10px;
+    bottom: 7px;
+}
+
+.bulk-tpl-item .bulk-tpl-item-action .iconfont {
+    margin-right: 0px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.bulk-tpl-item-hover {
+    box-shadow: 0px 2px 5px 1px rgba(46, 54, 64, 0.40);
+    .bulk-tpl-item-action {
+        display: block;
+    }
+}
+
+.showTip {
+    animation: show 0.5s both;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+

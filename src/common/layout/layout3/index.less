@@ -1,0 +1,170 @@
+html, body, #app {
+    height: 100%;
+}
+
+body {
+    overflow-x: auto;
+}
+
+.app {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.lk-layout {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    min-width: 1200px;
+}
+
+.lk-layout-header {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50px;
+    padding: 2px;
+    background: #272f3a;
+
+    .ant-menu-root {
+        margin-left: 222px;
+        padding-right: 20px;
+        border: 0;
+        background: #272f3a;
+
+        > li {
+            float: left;
+        }
+
+        .header-menu-user {
+            float: right;
+        }
+
+        .ant-menu-sub {
+            background: #272f3a;
+        }
+
+        > .ant-menu-item {
+            font-size: 14px;
+        }
+
+        .ant-menu-submenu-horizontal > .ant-menu {
+            margin-top: 4px;
+            min-width: 110px;
+            padding: 8px 0;
+            > .ant-menu-item {
+                height: 32px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .menu-user {
+        margin-top: 3px;
+        float: right;
+    }
+
+}
+
+.lk-layout-logo {
+    position: absolute;
+    left: 18px;
+    top: 14px;
+    width: 102px;
+    height: 22px;
+    cursor: pointer;
+    background: url(./logo.png) no-repeat;
+    background-size: 100%;
+}
+
+.lk-layout-content {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+}
+
+.lk-layout-main {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 224px;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background: #fff;
+}
+
+.lk-layout-main-i {
+    height: 100%;
+}
+
+.lk-layout-aside {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 224px;
+    overflow: auto;
+    padding-bottom: 24px;
+    background: #2e3640;
+    user-select: none;
+
+    .ant-menu-root {
+        user-select: none;
+        background: #2e3640;
+    }
+
+    > .ant-menu {
+        margin-bottom: 20px;
+    }
+
+    .ant-menu-submenu > .ant-menu-submenu-title {
+        font-size: 14px;
+        .iconfont {
+            margin-right: 8px;
+        }
+    }
+
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+        background: #272e36;
+    }
+    .ant-menu-dark.ant-menu-inline .ant-menu-item-selected {
+        background: #009dfc;
+    }
+}
+
+.lk-layout-footer {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+
+}
+
+.app-page {
+    padding: 20px;
+    min-height: 100%;
+    background: #eff2f7;
+}
+
+.app-page-white {
+    background: #fff;
+}
+
+.app-page-full {
+    padding: 0;
+}
+
+.app-page-scroll {
+    height: auto;
+}

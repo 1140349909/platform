@@ -1,0 +1,45 @@
+define('node_modules/zrender/lib/graphic/RadialGradient', function(require, exports, module) {
+
+  var global = typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {};
+  'use strict';
+  
+  
+      var zrUtil = require('node_modules/zrender/lib/core/util');
+  
+      var Gradient = require('node_modules/zrender/lib/graphic/Gradient');
+  
+      /**
+       * x, y, r are all percent from 0 to 1
+       * @param {number} [x=0.5]
+       * @param {number} [y=0.5]
+       * @param {number} [r=0.5]
+       * @param {Array.<Object>} [colorStops]
+       * @param {boolean} [globalCoord=false]
+       */
+      var RadialGradient = function (x, y, r, colorStops, globalCoord) {
+          this.x = x == null ? 0.5 : x;
+  
+          this.y = y == null ? 0.5 : y;
+  
+          this.r = r == null ? 0.5 : r;
+  
+          // Can be cloned
+          this.type = 'radial';
+  
+          // If use global coord
+          this.global = globalCoord || false;
+  
+          Gradient.call(this, colorStops);
+      };
+  
+      RadialGradient.prototype = {
+  
+          constructor: RadialGradient
+      };
+  
+      zrUtil.inherits(RadialGradient, Gradient);
+  
+      module.exports = RadialGradient;
+  
+
+});

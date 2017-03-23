@@ -1,0 +1,51 @@
+@charset "UTF-8";
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-break {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.color-err {
+  color: #f50;
+}
+
+.text-disabled {
+  color: #ccc;
+}
+
+.text-enabled {
+  color: #2db7f5;
+}
+
+.operation-vertical .operation-item {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ant-input-number-handler-wrap {
+  display: none;
+}
+
+/* fixed table空数据会变形 */
+.ant-spin-container {
+  position: relative;
+}
+
+.modal-top {
+  top: 20px;
+}
+
+.add-uploadbanner-img {
+  width: 100%;
+}

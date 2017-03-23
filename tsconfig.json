@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        //    "module": "commonjs",
+        //    "target": "es5",
+        //    "jsx": "react"
+        "target": "es6",
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "declaration": false,
+        "sourceMap": true
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}

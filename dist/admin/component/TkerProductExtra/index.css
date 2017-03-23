@@ -1,0 +1,37 @@
+.tker-product-extra:before, .tker-product-extra:after {
+  content: " ";
+  display: table;
+}
+
+.tker-product-extra:after {
+  clear: both;
+}
+
+.tker-product-extra-img {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.tker-product-extra-text {
+  margin-left: 20px;
+  float: left;
+  line-height: 27px;
+  font-size: 14px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.tker-product-extra-em {
+  font-family: lato,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+}
+
+.tker-product-extra-opdata {
+  float: right;
+  font-weight: 400;
+  margin-right: 35px;
+  line-height: 27px;
+}

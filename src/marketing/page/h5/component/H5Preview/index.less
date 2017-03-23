@@ -1,0 +1,173 @@
+@import '../../../../../common/asset/variable';
+
+.h5-preview-list {
+    .clearfix();
+}
+
+.h5-preview {
+    //display: inline-block;
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 22px;
+    width: 216px;
+    height: 350px;
+    position: relative;
+    border-radius: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    i {
+        font-style: normal;
+    }
+    .icon-jia {
+        color: #009dfc;
+        display: block;
+        text-align: center;
+        font-size: 35px;
+        margin-top: 115px;
+    }
+    .h5-preview-add {
+        font-size: 14px;
+        color: #009dfc;
+        text-align: center;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .h5-preview-add:hover, .icon-jia:hover {
+        cursor: pointer;
+    }
+    .ant-card-body {
+        padding: 0;
+    }
+    .h5-preview-img {
+        width: 200px;
+        height: 280px;
+        display: block;
+        margin: 8px;
+        box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        position: relative;
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            width: 100%;
+        }
+        overflow: hidden;
+    }
+    .h5-preview-title {
+        font-size: 16px;
+        color: #39404a;
+        padding: 0 0 0 15px;
+        font-weight: 600;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .preview-footer {
+        padding: 0 0 5px 15px;
+        display: inline-block;
+        span {
+            font-size: 14px;
+            color: #009dfc;
+        }
+        .price {
+            color: #666666;
+            a {
+                color: #009dfc;
+            }
+        }
+    }
+    .h5-preview-settings {
+        margin-bottom: 9px;
+        height: 22px;
+        line-height: 22px;
+        .settingIcon {
+            text-align: right;
+            display: inline-block;
+            float: right;
+            padding-right: 8px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 14px;
+            .iconfont {
+                font-size: 14px;
+            }
+        }
+    }
+    .h5-hover {
+        width: 200px;
+        height: 280px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: none;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        border-radius: 2px;
+        .h5-hover-operation {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+        }
+        p {
+            text-align: center;
+            font-size: 14px;
+            padding: 20px 0 14px 0;
+        }
+        p:hover {
+            cursor: pointer;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            background: #009dfc;
+            border-radius: 100px;
+            width: 120px;
+            height: 36px;
+            font-size: 14px;
+            border: none;
+        }
+        .use-btn {
+            margin-bottom: 15px;
+        }
+        .fav-btn {
+            background: #FFFFFF;
+            color: #009dfc;
+        }
+        .iconfont {
+            padding-right: 8px;
+            font-size: 14px;
+        }
+    }
+    .h5-hover:hover {
+        cursor: pointer;
+    }
+}
+
+.h5-preview-hover {
+    .h5-hover {
+        display: block;
+    }
+}
+
+.h5-preview:nth-child(4n) {
+    margin-right: 0;
+}
+
+.h5-preview:hover {
+    box-shadow: 0 2px 2px 0 rgba(131, 146, 166, 0.40);
+    cursor: pointer;
+}

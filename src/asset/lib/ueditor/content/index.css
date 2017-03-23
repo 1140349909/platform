@@ -1,0 +1,94 @@
+
+.lk-content {
+    font: 14px/1.8em -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: #3e3e3e;
+}
+
+.lk-content * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    word-wrap: break-word !important;
+}
+
+.lk-content h1 {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: .75em;
+}
+
+.lk-content h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: .3em;
+}
+
+.lk-content h3 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.lk-content p {
+    min-height: 1em;
+    clear: both;
+}
+
+.lk-content ul {
+    list-style-position: outside;
+    list-style-type: circle;
+    list-style-image: none;
+    margin-left: 40px;
+}
+
+.lk-content ol {
+    list-style-position: outside;
+    list-style-type: circle;
+    list-style-image: none;
+    margin-left: 40px;
+}
+
+.lk-content section {
+    margin-bottom: 0;
+}
+
+.lk-content em {
+    font-style: italic;
+}
+
+.lk-content strong {
+    font-weight: bold;
+}
+
+.lk-content img {
+    vertical-align: top;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.lk-content blockquote {
+    display: block;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 3px solid #dbdbdb;
+}
+
+.lk-content fieldset {
+    min-width: 0;
+}
+
+/* linkto样式 */
+.lk-content .lk-product,
+.lk-content .lk-linkto {
+    display: inline-block;
+}
+
+.lk-content a.lk-product,
+.lk-content a.lk-linkto {
+    cursor: pointer;
+    color: #009dfc;
+}
+
+/* 版式默认样式 */
+.ILokaEditor {
+    /*<section class="ILokaEditor">section,span,img,p</section>*/
+}

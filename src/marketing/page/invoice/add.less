@@ -1,0 +1,173 @@
+
+.app-page-invoice-add .add-nav{
+    height: 36px;
+    line-height:36px;
+    text-align: center;
+    color:#ffffff;
+    position: relative;
+    .add-nav-step1{
+        background: #009dfc;
+        z-index: 1;
+        &:after{
+            content: '';
+            width: 18px;
+            height: 36px;
+            display: block;
+            position: absolute;
+            right: 0;
+            top:0;
+            z-index: 9;
+            border-top: 18px solid transparent !important;
+            border-left: 12px solid #009dfc;
+            border-bottom: 18px solid transparent !important;
+            background-color: #fff;
+        }
+    }
+    .add-nav-step2{
+        background:#c0ccda;
+        z-index: 1;
+        &:before{
+            background:#c0ccda;
+            content: '';
+            display: block;
+            position: absolute;
+            left:-6px;
+            top:0;
+            z-index: 8;
+            border-top: 18px solid #c0ccda;
+            border-left: 12px solid #fff !important;
+            border-bottom: 18px solid #c0ccda;
+        }
+    }
+}
+.app-page-invoice-add .add-nav .step1active{
+    background: #7bcdff!important;
+    &:after{
+        border-left: 12px solid #7bcdff!important;
+    }
+}
+
+.app-page-invoice-add .add-nav .step2active{
+    background:#20a0ff!important;
+    &:before{
+        border-top: 18px solid #20a0ff!important;
+        border-bottom: 18px solid #20a0ff!important;
+    }
+}
+
+.app-page-invoice-add .add-step1-tip{
+    padding-left: 15px;
+    margin-top: 9px;
+    color:#f88600;
+    height:50px;
+    line-height:50px;
+    background:#fcf8e1;
+    border:1px solid transparent;
+    .ant-btn{
+        border-color: #f88600;
+        float: right;
+        margin-top: 10px;
+        margin-right: 13px;
+        background:#f88600;
+        width:76px;
+        height:30px;
+        color: #fff;
+        padding: 0;
+        &:hover{
+            border-color:#f88600;
+        }
+        font-size: 13px;
+    }
+}
+
+.app-page-invoice-add .add-step1-click{
+    margin-bottom: 20px;
+    height: 64px;
+    background:#eff2f7;
+    border:1px solid #e0e6ed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    .add-step1-click-text{
+
+        p{
+            text-align: right;
+            color:#1f2d3d;
+            line-height:20px;
+        }
+        p:nth-of-type(1){
+            span{
+                color: #F88600;
+                font-weight: bolder;
+            }
+        }
+        p:nth-of-type(2){
+           font-size: 13px;
+        }
+    }
+    .add-step1-click-button{
+        margin-left: 18px;
+        margin-right: 14px;
+    }
+
+}
+
+
+
+.app-page-invoice-add  .add-step2-inf{
+    background:#ffffff;
+    border:1px solid #e0e6ed;
+    height:98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .inf-top{
+        height: 48px;
+        border-bottom:1px dashed #c0ccda;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .top-left{
+           width: 80%;
+            text-align: left;
+            line-height:20px;
+            font-weight: bolder;
+            font-size:14px;
+            color:#1f2d3d;
+            span{
+                font-weight: normal;
+            }
+        }
+        .top-right{
+            width: 30%;
+            text-align: right;
+            line-height:20px;
+            font-size:13px;
+            color:#1f2d3d;
+            span{
+                font-size:16px;
+                color:#f88600;
+                font-weight: bolder;
+            }
+        }
+    }
+    .inf-bottom{
+        height: 49px;
+        .ant-row{
+            div{
+                height: 49px;
+                line-height: 49px;
+                font-size:14px;
+                color:#1f2d3d;
+                text-align:left;
+            }
+        }
+    }
+}
+.app-page-invoice-add  .add-step2-operate{
+    margin-top: 30px;
+}
+
+
+

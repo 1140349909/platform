@@ -1,0 +1,107 @@
+.lk-content {
+    font: 14px/1.8em -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: #3e3e3e;
+    overflow: hidden;
+}
+
+.lk-content * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    word-wrap: break-word !important;
+}
+
+.lk-content h1 {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: .75em;
+}
+
+.lk-content h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: .3em;
+}
+
+.lk-content h3 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.lk-content p {
+    margin: 0;
+    min-height: 1em;
+    clear: both;
+}
+
+.lk-content ul {
+    list-style-position: outside;
+    list-style-type: circle;
+    list-style-image: none;
+    margin-left: 40px;
+}
+
+.lk-content ol {
+    list-style-position: outside;
+    list-style-type: circle;
+    list-style-image: none;
+    margin-left: 40px;
+}
+
+.lk-content section {
+    margin-bottom: 0;
+}
+
+.lk-content em {
+    font-style: italic;
+}
+
+.lk-content strong {
+    font-weight: bold;
+}
+
+.lk-content img {
+    vertical-align: top;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.lk-content blockquote {
+    display: block;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 3px solid #dbdbdb;
+}
+
+.lk-content fieldset {
+    min-width: 0;
+}
+
+/* linkto样式 */
+.lk-content .lk-product,
+.lk-content .lk-linkto {
+    display: inline-block;
+}
+
+.lk-content a.lk-product,
+.lk-content a.lk-linkto {
+    cursor: pointer;
+    color: #009dfc;
+}
+
+/* 版式默认样式 重置版式默认样式 */
+/*
+<section class="ILokaEditor">
+1、只允许使用section,span,p,img标签,使用section控制布局，内容的样式可使用span和p来控制，禁止使用em,strong,blockquote,hr,ol,ul,li等标签。
+2、版式的布局需要自适应
+3、内容控制请用行内样式控制,保证内容增加时候不变形,
+4、font的设置会随着全局的风格变化,默认为font: 14px/1.8em -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+自定义版式中需要固定,请设置独立设置font-size、line-height、font-family; 如果需要随着风格变化，则不需要设置
+</section>
+*/
+.ILokaEditor p,
+.ILokaEditor section {
+    /* 影响样式的部分在此次增加 */
+    margin: 0;
+    padding: 0;
+}

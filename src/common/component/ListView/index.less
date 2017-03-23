@@ -1,0 +1,65 @@
+.list-view-tip {
+    color: #9aa9be;
+    text-align: center;
+    .iconfont {
+        vertical-align: middle;
+    }
+}
+
+.list-view{
+    position:relative;
+    height:100%;
+}
+
+.list-view-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+}
+
+.list-view-pending .ant-spin-spinning {
+    margin-right: 5px;
+}
+
+.list-view-empty, .list-view-first.list-view-failure {
+    padding: 100px 0;
+    .icon-ku {
+        display: block;
+        width: 100px;
+        height: 120px;
+        margin: auto;
+        font-size: 100px;
+    }
+}
+
+.list-view-first.list-view-pending {
+    padding: 160px 0 100px;
+}
+
+.list-view-pending, .list-view-last,
+.list-view-more.list-view-pending,
+.list-view-more.list-view-failure {
+    padding: 15px 0;
+}
+
+.list-view-top{
+    position: absolute;
+    bottom:15px;
+    right:15px;
+}
+
+.list-view-top svg{
+    cursor: pointer;
+    font-size:24px;
+    transition: all .3s;
+    color:#8f969d;
+    width:28px;
+    height:28px;
+}
+
+.list-view-top svg:hover{
+    color:#b7b7b7
+}
